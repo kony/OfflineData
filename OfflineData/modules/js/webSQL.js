@@ -1,5 +1,5 @@
 /*****************************************************************
-*	Name    : commonErrorCallback
+*	Name    :commonErrorCallback
 *	Author  : Kony 
 *	Purpose : To display error message on the console 
 ******************************************************************/
