@@ -257,7 +257,7 @@
     <attributes name="ID_CAP_IDENTITY_DEVICE" value="true"/>
     <attributes name="RECEIVE_SMS" value="false"/>
     <attributes name="BIND_REMOTEVIEWS" value="false"/>
-    <attributes name="appidkey" value="OfflineDataApp"/>
+    <attributes name="appidkey" value="offlineData"/>
     <attributes name="win8smalllogokey" value=""/>
     <attributes name="SET_DEBUG_APP" value="false"/>
     <attributes name="tcandroid240basefontsize" value="10"/>

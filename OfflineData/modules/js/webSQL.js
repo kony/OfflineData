@@ -179,30 +179,7 @@ function createDB_Tablet(  )
 	                     commonVoidcallback);
 	                     
 }
-/*****************************************************************
-*	Name    : success_insertData
-*	Author  : Kony 
-*	Purpose : To display a message when inserting the rows into 'employee_details' table is successful.
-******************************************************************/
 
-function success_insertData( transactionId, resultset )
-{	
-	//#ifdef desktopweb
-		frmOfflineData.lblSqlUpdate.text ="3 rows are added to emp_details table";
-	//#else
-		frmWebSQL.lblSqlUpdate.text ="3 rows are added to emp_details table";
-	//#endif
-}
-/*****************************************************************
-*	Name    : success_insertData_Table
-*	Author  : Kony 
-*	Purpose : To display a message when inserting the rows into 'employee_details' table is successful.
-******************************************************************/
-
-function success_insertData_Table( transactionId, resultset )
-{	
-	frmOfflineData.lblSqlUpdate.text ="3 rows are added to emp_details table";
-}
 /*****************************************************************
 *	Name    : insertFirstData
 *	Author  : Kony 
@@ -220,7 +197,6 @@ function insertFirstData( dbId )
 	    kony.db.executeSql(dbId,
 	                        sqlStatement,
 	                        null,
-	                        success_insertData,
 	                        commonErrorCallback);
 	}
 }
@@ -241,7 +217,6 @@ function insertFirstData_Tablet( dbId )
 	    kony.db.executeSql(dbId,
 	                        sqlStatement,
 	                        null,
-	                        success_insertData_Table,
 	                        commonErrorCallback);
 	}
 }
@@ -252,7 +227,7 @@ function insertFirstData_Tablet( dbId )
 *	Purpose : To implement WebSQL 'INSERT' statement to insert data into 'emp_details' table
 ******************************************************************/
 
-function doTransactioninsertData(  )
+function doTransactioninsertData()
 {	
 	try
 	{
@@ -265,6 +240,7 @@ function doTransactioninsertData(  )
 	                     insertFirstData,
 	                     commonErrorCallback,
 	                     commonVoidcallback);
+	                     doTransactionsqlSelect();
 	}
 	catch (e) {
 	// todo: handle exception
@@ -291,6 +267,7 @@ function doTransactioninsertData_Table(  )
 	                     insertFirstData_Tablet,
 	                     commonErrorCallback,
 	                     commonVoidcallback);
+	                     doTransactionsqlSelect_Tablet();
 	}
 	catch (e) {
 	// todo: handle exception
@@ -310,23 +287,33 @@ function success_sqlSelect( transactionId, resultset )
 	{
 		var numResults = resultset.rows.length;
 		var insertTable = [ { lblEmpID : "empid", lblEmpName : "empname", lblDepId : "depid" }  ];
-		for ( var i = 0; i <= numResults - 1; i++ )
+		for ( var i = 0; i <= numResults - 4; i++ )
 		{
 			var rowItem = kony.db.sqlResultsetRowItem(transactionId, resultset, i);
 			var addItem = { lblEmpID : rowItem.empid.toString(), lblEmpName : rowItem.empname, lblDepId : rowItem.depid.toString() } ;
 			insertTable.push(addItem);
 		}
-		//#ifdef desktopweb
-			frmWebSQLResults.segResultData.setData (insertTable);
-		//#else
-			frmWebSQLResults.segResultData.setData (insertTable);
-		//#endif
-		
+		frmWebSQLResults.segResultData.setData (insertTable);
+		insertTable = [];
+		for ( var i = numResults - 3; i <= numResults - 1; i++ )
+		{
+			var rowItem = kony.db.sqlResultsetRowItem(transactionId, resultset, i);
+			var addItem = { lblEmpID2 : rowItem.empid.toString(), lblEmpName2 : rowItem.empname, lblDepId2 : rowItem.depid.toString() } ;
+			insertTable.push(addItem);
+		}
+		frmWebSQLResults.segResultData2.setData (insertTable);
 	}
 	//#ifdef desktopweb
-		frmWebSQLResults.show();	
+		frmWebSQLResults.show();
+		alert("3 rows are added to emp_details table");
+		//frmOfflineData.lblSqlUpdate.text = "";
+		insertTable = [];
+			
 	//#else
-		frmWebSQLResults.show();	
+		frmWebSQLResults.show();
+		alert("3 rows are added to emp_details table");
+		//frmOfflineData.lblSqlUpdate.text = "";
+		insertTable = [];			
 	//#endif
 }
 
@@ -347,7 +334,7 @@ function sqlSelect( dbId )
 		                    null,
 		                    success_sqlSelect,
 		                    commonErrorCallback);
-	
+		
 	}
 	catch(err)
 	{
@@ -416,13 +403,81 @@ function doTransactionsqlSelect_Tablet()
 ******************************************************************/
 
 function success_sqlUpdate( transactionId, resultset )
-{	
-	//#ifdef desktopweb
-		frmOfflineData.lblSqlUpdate.text = "Executed UPDATE emp_details SET depid=30 WHERE empname='John'; Rows updated: " + resultset[ kony.decrement("rowsAffected") ];
-	//#else
-		frmWebSQL.lblSqlUpdate.text = "Executed UPDATE emp_details SET depid=30 WHERE empname='John'; Rows updated: " + resultset[ kony.decrement("rowsAffected") ];
-	//#endif
+{
+if(resultset != null)
+	{		
+		var numResults = resultset.rows.length;
+	}
+    	
 }
+
+/*****************************************************************
+*	Name    : doTransactionsqlUpdate
+*	Author  : Kony 
+*	Purpose : To initiate the show process after Updation of DB
+******************************************************************/
+
+function doTransactionsqlUpdate(){
+
+	kony.db.transaction(baseObjectId,
+	                     sqlSelect_Update,
+	                     commonErrorCallback,
+	                     commonVoidcallback);
+}
+
+/*****************************************************************
+*	Name    : sqlSelect_Update
+*	Author  : Kony 
+*	Purpose : To select the DB To display
+******************************************************************/
+
+function sqlSelect_Update(dbId){
+	try
+	{
+		var sqlStatement = "SELECT * FROM emp_details";
+		kony.db.executeSql(dbId,
+		                    sqlStatement,
+		                    null,
+		                    success_sqlSelect_Update,
+		                    commonErrorCallback);
+		
+	}
+	catch(err)
+	{
+		kony.print("error while selecting "+err);
+	}
+}
+
+/*****************************************************************
+*	Name    : success_sqlSelect_Update
+*	Author  : Kony 
+*	Purpose : To display the selected database in different segments
+******************************************************************/
+
+function  success_sqlSelect_Update(transactionId, resultset){
+		var numResults = resultset.rows.length;
+		var insertTable = [ { lblEmpID : "empid", lblEmpName : "empname", lblDepId : "depid" }  ];
+		for ( var i = 1; i <= numResults - 1; i++ )
+		{
+			var rowItem = kony.db.sqlResultsetRowItem(transactionId, resultset, i);
+			var addItem = { lblEmpID : rowItem.empid.toString(), lblEmpName : rowItem.empname, lblDepId : rowItem.depid.toString() } ;
+			insertTable.push(addItem);
+		}
+		frmWebSQLResults.segResultData.setData (insertTable);
+		insertTable = [];
+		for ( var i = 0; i < 1; i++ )
+		{
+			var rowItem = kony.db.sqlResultsetRowItem(transactionId, resultset, i);
+			var addItem = { lblEmpID2 : rowItem.empid.toString(), lblEmpName2 : rowItem.empname, lblDepId2 : rowItem.depid.toString() } ;
+			insertTable.push(addItem);
+		}
+		frmWebSQLResults.segResultData2.setData (insertTable);
+		frmWebSQLResults.show();
+		alert("Executed UPDATE emp_details SET depid=30 WHERE empname='George'");
+		//frmOfflineData.lblSqlUpdate.text = "";
+		
+}
+
 /*****************************************************************
 *	Name    : success_sqlUpdate_Tablet
 *	Author  : Kony 
@@ -431,7 +486,11 @@ function success_sqlUpdate( transactionId, resultset )
 
 function success_sqlUpdate_Tablet( transactionId, resultset )
 {
-	frmOfflineData.lblSqlUpdate.text = "Executed UPDATE emp_details SET depid=30 WHERE empname='John'; Rows updated: " + resultset[ kony.decrement("rowsAffected") ];
+    if(resultset != null)
+	{
+		var numResults = resultset.rows.length;
+	}
+	
 }
 
 /*****************************************************************
@@ -442,15 +501,15 @@ function success_sqlUpdate_Tablet( transactionId, resultset )
 
 function sqlUpdate( dbId )
 {
-	var sqlStatement = "UPDATE emp_details SET depid=30 WHERE empname='John'";
-	//Execute sql statement
-
+	var sqlStatement = "UPDATE emp_details SET depid=30 WHERE empname='George'";
 	kony.db.executeSql(dbId,
 	                    sqlStatement,
 	                    null,
 	                    success_sqlUpdate,
 	                    commonErrorCallback);
 }
+
+
 /*****************************************************************
 *	Name    : sqlUpdate_Tablet
 *	Author  : Kony 
@@ -459,9 +518,7 @@ function sqlUpdate( dbId )
 
 function sqlUpdate_Tablet( dbId )
 {
-	var sqlStatement = "UPDATE emp_details SET depid=30 WHERE empname='John'";
-	//Execute sql statement
-
+	var sqlStatement = "UPDATE emp_details SET depid=30 WHERE empname='George'";
 	kony.db.executeSql(dbId,
 	                    sqlStatement,
 	                    null,
@@ -475,7 +532,7 @@ function sqlUpdate_Tablet( dbId )
 *	Purpose : To initiate transaction to implement webSQL 'UPDATE' to update 'employee_details' table  
 ******************************************************************/
 
-function doTransactionUpdate(  )
+function doTransactionUpdate()
 {
 	//Create a new read n write transaction
 	try{
@@ -498,6 +555,7 @@ function doTransactionUpdate(  )
 }
 /*****************************************************************
 *	Name    : doTransactionUpdate_Tablet
+
 *	Author  : Kony 
 *	Purpose : To initiate transaction to implement webSQL 'UPDATE' to update 'employee_details' table  
 ******************************************************************/
@@ -526,28 +584,31 @@ function doTransactionUpdate_Tablet(  )
 /*****************************************************************
 *	Name    : success_sqlDelete
 *	Author  : Kony 
-*	Purpose : To display a message when deleting the rows from 'employee_details' is successful
+*	Purpose : To take care of numresults which is used in doTransactionsqlDelete function
 ******************************************************************/
 
 function success_sqlDelete( transactionId, resultset )
 {	
-	//#ifdef desktopweb
-		frmOfflineData.lblSqlUpdate.text = "Executed DELETE FROM emp_details WHERE empid=(select max(empid) from emp_details); Rows updated: " + resultset[ kony.decrement("rowsAffected") ];
-	//#else
-		frmWebSQL.lblSqlUpdate.text = "Executed DELETE FROM emp_details WHERE empid=(select max(empid) from emp_details); Rows updated: " + resultset[ kony.decrement("rowsAffected") ];
-	//#endif
-	
+    if(resultset != null)
+     	{		
+		var numResults = resultset.rows.length;
+		}
 	
 }
+
 /*****************************************************************
 *	Name    : success_sqlDelete_Tablet
 *	Author  : Kony 
-*	Purpose : To display a message when deleting the rows from 'employee_details' is successful
+*	Purpose : To take care of numresults which is used in doTransactionsqlDelete function
 ******************************************************************/
 
 function success_sqlDelete_Tablet( transactionId, resultset )
 {
-	frmOfflineData.lblSqlUpdate.text = "Executed DELETE FROM emp_details WHERE empid=(select max(empid) from emp_details); Rows updated: " + resultset[ kony.decrement("rowsAffected") ];
+	
+	if(resultset != null)
+	{
+		var numResults = resultset.rows.length;
+	}
 }
 /*****************************************************************
 *	Name    : sqlDelete
@@ -662,4 +723,68 @@ function onClickSegRow(){
 		frmOfflineData.hbxLocalStore.setVisibility(false);
 		frmOfflineData.hbxWebSQL.setVisibility(true);
 	}
+}
+
+/*****************************************************************
+*	Name    : doTransactionsqlDelete
+*	Author  : Kony 
+*	Purpose : to Initiate the transaction to select DB after Deletion
+******************************************************************/
+
+function doTransactionsqlDelete(){
+
+	kony.db.transaction(baseObjectId,
+	                     sqlSelect_Delete,
+	                     commonErrorCallback,
+	                     commonVoidcallback);
+}
+
+/*****************************************************************
+*	Name    : sqlSelect_Delete
+*	Author  : Kony 
+*	Purpose : To implement the transaction to select DB after Deletion
+******************************************************************/
+
+function sqlSelect_Delete(dbId){
+	try
+	{
+		var sqlStatement = "SELECT * FROM emp_details";
+		kony.db.executeSql(dbId,
+		                    sqlStatement,
+		                    null,
+		                    success_sqlSelect_Delete,
+		                    commonErrorCallback);
+		
+	}
+	catch(err)
+	{
+		kony.print("error while selecting "+err);
+	}
+}
+
+/*****************************************************************
+*	Name    : success_sqlSelect_Delete
+*	Author  : Kony 
+*	Purpose : To display the DB after Deletion of tuples
+******************************************************************/
+
+function  success_sqlSelect_Delete(transactionId, resultset){
+		var numResults = resultset.rows.length;
+		var insertTable = [ { lblEmpID : "empid", lblEmpName : "empname", lblDepId : "depid" }  ];
+		for ( var i = 0; i <= numResults - 1; i++ )
+		{
+			var rowItem = kony.db.sqlResultsetRowItem(transactionId, resultset, i);
+		    var addItem = { lblEmpID : rowItem.empid.toString(), lblEmpName : rowItem.empname, lblDepId : rowItem.depid.toString() } ;
+			insertTable.push(addItem);
+		}
+		frmWebSQLResults.segResultData.setData (insertTable);
+		insertTable = [];
+		frmWebSQLResults.segResultData2.setData(insertTable);
+		frmWebSQLResults.show();
+		alert("Executed DELETE FROM emp_details WHERE empid=(select max(empid) from emp_details");
+		//frmOfflineData.lblSqlUpdate.text = "";
+}
+
+function onHide_Tablet(){
+	frmOfflineData.lblSqlUpdate.text = "";
 }
