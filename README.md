@@ -3,7 +3,6 @@ OfflineData
 
 Application to showcase the features of Offline Data and WebSQL APIs
 
-Project Owner: Malla Nandikonda <Malla.Nandikonda@kony.com>
 
 # Purpose
 This Application will showcase the following features of Offline Data and WebSQL APIs
@@ -12,4 +11,12 @@ This Application will showcase the following features of Offline Data and WebSQL
 * Storing complex structures using WebSQL
 
 # Supported platforms:
-iPhone, iPad, Android, Android tablet, SPA iPhone, SPA iPad, SPA Android, SPA Android tablet and DesktopWeb
+* iPhone
+* iPad
+* Android
+* Android tablet
+* SPA iPhone
+* SPA iPad
+* SPA Android
+* SPA Android tablet
+* DesktopWeb
