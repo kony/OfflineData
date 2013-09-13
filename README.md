@@ -18,7 +18,7 @@ This Application will showcase the following features of Offline Data and WebSQL
  * SPA iPhone
  
 **Tablet** 
- * Anroid
+ * Android
  * iPad
  * SPA iPad
  * SPA Android
