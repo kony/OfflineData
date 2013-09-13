@@ -516,8 +516,8 @@
                 <serviceType>0</serviceType>
             </leftImgEvtData>
             <leftPrevTitle>false</leftPrevTitle>
-            <leftSideView>0</leftSideView>
-            <leftTitle></leftTitle>
+            <leftSideView>1</leftSideView>
+            <leftTitle>Back</leftTitle>
             <leftTitleEvtData>
                 <function>None</function>
                 <serviceType>0</serviceType>
@@ -1447,6 +1447,7 @@
             <bb_content_align>1</bb_content_align>
             <bb_display_text>true</bb_display_text>
             <j2me_content_align>1</j2me_content_align>
+            <c_ToolTip></c_ToolTip>
             <tooltip></tooltip>
             <android_display_text>true</android_display_text>
             <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -2161,6 +2162,7 @@
             <bb_content_align>1</bb_content_align>
             <bb_display_text>true</bb_display_text>
             <j2me_content_align>1</j2me_content_align>
+            <c_ToolTip></c_ToolTip>
             <tooltip></tooltip>
             <android_display_text>true</android_display_text>
             <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -2901,6 +2903,7 @@
             <bb_content_align>1</bb_content_align>
             <bb_display_text>true</bb_display_text>
             <j2me_content_align>1</j2me_content_align>
+            <c_ToolTip></c_ToolTip>
             <tooltip></tooltip>
             <android_display_text>true</android_display_text>
             <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -3633,6 +3636,7 @@
             <bb_content_align>1</bb_content_align>
             <bb_display_text>true</bb_display_text>
             <j2me_content_align>1</j2me_content_align>
+            <c_ToolTip></c_ToolTip>
             <tooltip></tooltip>
             <android_display_text>true</android_display_text>
             <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -4305,6 +4309,7 @@
             <ipad_longtext>false</ipad_longtext>
             <ipad_wrapping>0</ipad_wrapping>
             <ipad_content_align>0</ipad_content_align>
+            <c_ToolTip></c_ToolTip>
             <tooltip></tooltip>
             <bb_longtext>false</bb_longtext>
             <bb_content_align>0</bb_content_align>
@@ -4950,6 +4955,7 @@
             <ipad_longtext>false</ipad_longtext>
             <ipad_wrapping>0</ipad_wrapping>
             <ipad_content_align>0</ipad_content_align>
+            <c_ToolTip></c_ToolTip>
             <tooltip></tooltip>
             <bb_longtext>false</bb_longtext>
             <bb_content_align>0</bb_content_align>

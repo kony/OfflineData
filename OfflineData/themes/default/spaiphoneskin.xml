@@ -104,22 +104,22 @@
         <att name="BlockingImgPositon" value="" type="String"/>
         <att name="BlockingImgWidget" value="Button" type="String"/>
        <att name="TopBorderWidth" value="1" type="int"/>
-       <att name="TopBorderColor" value="76,76,76" type="RGB"/>
+       <att name="TopBorderColor" value="255,255,255" type="RGB"/>
        <att name="TopBorderColorTransparency" value="0" type="int"/>
        <att name="TopBorderStyle" value="rounded corner" type="String"/>
        <att name="TopBorderRadius" value="5" type="int"/>
        <att name="LeftBorderWidth" value="1" type="int"/>
-       <att name="LeftBorderColor" value="76,76,76" type="RGB"/>
+       <att name="LeftBorderColor" value="255,255,255" type="RGB"/>
        <att name="LeftBorderColorTransparency" value="0" type="int"/>
        <att name="LeftBorderStyle" value="rounded corner" type="String"/>
        <att name="LeftBorderRadius" value="5" type="int"/>
        <att name="BottomBorderWidth" value="1" type="int"/>
-       <att name="BottomBorderColor" value="76,76,76" type="RGB"/>
+       <att name="BottomBorderColor" value="255,255,255" type="RGB"/>
        <att name="BottomBorderColorTransparency" value="0" type="int"/>
        <att name="BottomBorderStyle" value="rounded corner" type="String"/>
        <att name="BottomBorderRadius" value="5" type="int"/>
        <att name="RightBorderWidth" value="1" type="int"/>
-       <att name="RightBorderColor" value="76,76,76" type="RGB"/>
+       <att name="RightBorderColor" value="255,255,255" type="RGB"/>
        <att name="RightBorderColorTransparency" value="0" type="int"/>
        <att name="RightBorderStyle" value="rounded corner" type="String"/>
        <att name="RightBorderRadius" value="5" type="int"/>

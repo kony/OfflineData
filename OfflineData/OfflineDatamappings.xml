@@ -1,47 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<application name="OfflineData" id="OfflineData">
-    <container type="form" id="frmHome" displayname="Form"/>
-    <container type="form" id="frmHome" displayname="Form"/>
-    <container type="dialog" id="hdrOne" displayname="Popup"/>
-    <container type="dialog" id="ftrOne" displayname="Popup"/>
-    <container type="form" id="frmHome" displayname="Form"/>
-    <container type="form" id="frmWebSQLResults" displayname="Form"/>
-    <container type="dialog" id="hdrOne" displayname="Popup"/>
-    <container type="dialog" id="ftrOne" displayname="Popup"/>
-    <container type="form" id="frmHome" displayname="Form"/>
-    <container type="form" id="frmWebSQLResults" displayname="Form"/>
-    <container type="form" id="frmOfflineData" displayname="Form">
-        <component type="textbox2" id="txtSetItemkey" displayname="TextBox2"/>
-        <component type="textbox2" id="txtSetItemValue" displayname="TextBox2"/>
-        <component type="textbox2" id="txtGetItemKey" displayname="TextBox2"/>
-        <component type="textbox2" id="txtReadKeyIndex" displayname="TextBox2"/>
-        <component type="textbox2" id="txtRemoveItemKey" displayname="TextBox2"/>
+<application id="OfflineData" name="OfflineData">
+    <container displayname="Popup" id="hdrOne" type="dialog"/>
+    <container displayname="Popup" id="ftrOne" type="dialog"/>
+    <container displayname="Form" id="frmWebSQLResults" type="form"/>
+    <container displayname="Popup" id="hdrOne" type="dialog"/>
+    <container displayname="Popup" id="ftrOne" type="dialog"/>
+    <container displayname="Form" id="frmWebSQLResults" type="form"/>
+    <container displayname="Form" id="frmHome" type="form"/>
+    <container displayname="Form" id="frmHome" type="form"/>
+    <container displayname="Popup" id="hdrOne" type="dialog"/>
+    <container displayname="Popup" id="ftrOne" type="dialog"/>
+    <container displayname="Form" id="frmHome" type="form"/>
+    <container displayname="Form" id="frmLocalStore" type="form">
+        <component displayname="TextBox2" id="txtSetItemkey" type="textbox2"/>
+        <component displayname="TextBox2" id="txtSetItemValue" type="textbox2"/>
+        <component displayname="TextBox2" id="txtGetItemKey" type="textbox2"/>
+        <component displayname="TextBox2" id="txtReadKeyIndex" type="textbox2"/>
+        <component displayname="TextBox2" id="txtRemoveItemKey" type="textbox2"/>
     </container>
-    <container type="dialog" id="hdrOne" displayname="Popup"/>
-    <container type="dialog" id="ftrOne" displayname="Popup"/>
-    <container type="form" id="frmHome" displayname="Form"/>
-    <container type="form" id="frmOfflineData" displayname="Form">
-        <component type="textbox2" id="txtSetItemkey" displayname="TextBox2"/>
-        <component type="textbox2" id="txtSetItemValue" displayname="TextBox2"/>
-        <component type="textbox2" id="txtGetItemKey" displayname="TextBox2"/>
-        <component type="textbox2" id="txtReadKeyIndex" displayname="TextBox2"/>
-        <component type="textbox2" id="txtRemoveItemKey" displayname="TextBox2"/>
-    </container>
-    <container type="form" id="frmWebSQLResults" displayname="Form"/>
-    <container type="form" id="frmOfflineData" displayname="Form">
-        <component type="textbox2" id="txtSetItemkey" displayname="TextBox2"/>
-        <component type="textbox2" id="txtSetItemValue" displayname="TextBox2"/>
-        <component type="textbox2" id="txtGetItemKey" displayname="TextBox2"/>
-        <component type="textbox2" id="txtReadKeyIndex" displayname="TextBox2"/>
-        <component type="textbox2" id="txtRemoveItemKey" displayname="TextBox2"/>
-    </container>
-    <container type="form" id="frmOfflineData" displayname="Form">
-        <component type="textbox2" id="txtSetItemkey" displayname="TextBox2"/>
-        <component type="textbox2" id="txtSetItemValue" displayname="TextBox2"/>
-        <component type="textbox2" id="txtGetItemKey" displayname="TextBox2"/>
-        <component type="textbox2" id="txtReadKeyIndex" displayname="TextBox2"/>
-        <component type="textbox2" id="txtRemoveItemKey" displayname="TextBox2"/>
-    </container>
+    <container displayname="Form" id="frmMenu" type="form"/>
+    <container displayname="Form" id="frmWebSQL" type="form"/>
+    <container displayname="Form" id="frmWebSQLResults" type="form"/>
+    <container displayname="Form" id="frmHome" type="form"/>
+    <container displayname="Form" id="frmHome" type="form"/>
     <globalsequences/>
     <skins/>
 </application>
