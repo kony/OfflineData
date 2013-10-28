@@ -28,10 +28,10 @@
     <attributes name="ACCESS_COARSE_LOCATION" value="false"/>
     <attributes name="RESTART_PACKAGES" value="false"/>
     <attributes name="ID_CAP_PHONEDIALER" value="true"/>
-    <attributes name="WP8_ID_CAP_WALLET_PAYMENTINSTRUMENTS" value="true"/>
+    <attributes name="WP8_ID_CAP_WALLET_PAYMENTINSTRUMENTS" value="false"/>
     <attributes name="removeprintstatements" value="true"/>
     <attributes name="appversionkey" value="1.0.0"/>
-    <attributes name="WP8_ID_CAP_GAMERSERVICES" value="true"/>
+    <attributes name="WP8_ID_CAP_GAMERSERVICES" value="false"/>
     <attributes name="BIND_WALLPAPER" value="false"/>
     <attributes name="isNewAppWithRespectToAndroidPackageName" value="true"/>
     <attributes name="SET_ANIMATION_SCALE" value="false"/>
@@ -113,8 +113,8 @@
     <attributes name="GET_PACKAGE_SIZE" value="false"/>
     <attributes name="allowselfsignedcertificate" value="false"/>
     <attributes name="NFC" value="false"/>
-    <attributes name="tcnth240basefontsize" value="12"/>
     <attributes name="tcbb480basefontsize" value="17"/>
+    <attributes name="tcnth240basefontsize" value="12"/>
     <attributes name="desktopwebnoscriptmessage" value="To use this site, first enable your browser&#039;s JavaScript support and then refresh this page."/>
     <attributes name="tcbb360basefontsize" value="13"/>
     <attributes name="WP8_ID_CAP_PHONEDIALER" value="true"/>
@@ -161,12 +161,12 @@
     <attributes name="win8toastcapablekey" value="no"/>
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="Webcam" value="true"/>
-    <attributes name="winmobileguidkey" value="d8c49627-8131-4cd8-9f6f-624161e01d89"/>
+    <attributes name="winmobileguidkey" value="bce31346-2d5d-4041-9c05-901526143a75"/>
     <attributes name="tcbjs240basefontsize" value="10"/>
     <attributes name="SET_ALWAYS_FINISH" value="false"/>
     <attributes name="apptitle" value=""/>
     <attributes name="apppackagekey" value="com.orgname.OfflineDataEx"/>
-    <attributes name="WP8_ID_CAP_WALLET_SECUREELEMENT" value="true"/>
+    <attributes name="WP8_ID_CAP_WALLET_SECUREELEMENT" value="false"/>
     <attributes name="SET_ALARM" value="false"/>
     <attributes name="read_device_identifying_information" value="false"/>
     <attributes name="RECEIVE_MMS" value="false"/>
@@ -205,7 +205,7 @@
     <attributes name="tcphoneformatindicator" value="false"/>
     <attributes name="Location" value="true"/>
     <attributes name="ACCESS_SURFACE_FLINGER" value="false"/>
-    <attributes name="currentgaversion" value="5.5.25.QA_v201309281727_r2"/>
+    <attributes name="currentgaversion" value="5.5.24.QA_v201309231046"/>
     <attributes name="mwhttpsportkey" value="443"/>
     <attributes name="pathkey" value=""/>
     <attributes name="vendornamekey" value="KonyLabs"/>
@@ -223,8 +223,8 @@
     <attributes name="ID_CAP_ISV_CAMERA" value="true"/>
     <attributes name="access_sms_mms" value="false"/>
     <attributes name="urlschemanameorder" value=""/>
-    <attributes name="win8packagelogokey" value=""/>
     <attributes name="desktopwebwidthoption" value="Percentage"/>
+    <attributes name="win8packagelogokey" value=""/>
     <attributes name="CAMERA" value="false"/>
     <attributes name="WP8_ID_CAP_MEDIALIB_PHOTO" value="true"/>
     <attributes name="access_location_services" value="false"/>
@@ -299,7 +299,7 @@
     <attributes name="tcbjs320basefontsize" value="10"/>
     <attributes name="CLEAR_APP_CACHE" value="false"/>
     <attributes name="appiniteventkey" value="None"/>
-    <attributes name="ID_RESOLUTION_WXGA" value="false"/>
+    <attributes name="ID_RESOLUTION_WXGA" value="true"/>
     <attributes name="devicemsg" value="This device is currently not supported"/>
     <attributes name="CHANGE_WIFI_STATE" value="false"/>
     <attributes name="ID_CAP_MEDIALIB" value="true"/>
@@ -373,9 +373,9 @@
     <attributes name="SET_ACTIVITY_WATCHER" value="false"/>
     <attributes name="tcnth320basefontsize" value="15"/>
     <attributes name="WP8_ID_CAP_WALLET" value="true"/>
+    <attributes name="svcaddrkey" value="http://10.211.55.4:8080"/>
     <attributes name="WP8_ID_CAP_WEBBROWSERCOMPONENT" value="true"/>
     <attributes name="ID_CAP_CAMERA" value="false"/>
-    <attributes name="svcaddrkey" value="http://10.211.55.4:8080"/>
     <attributes name="spaandroidtab1024basefontsize" value="16"/>
     <attributes name="SIGNAL_PERSISTENT_PROCESSES" value="false"/>
     <attributes name="tcbb240basefontsize" value="12"/>

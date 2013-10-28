@@ -71,14 +71,12 @@ function createTable( dbId )
 	                    null,
 	                    success_dropTable,
 	                    commonErrorCallback);
-	
 	var sqlStatement = "CREATE TABLE IF NOT EXISTS emp_details (empid REAL PRIMARY KEY,empname TEXT,depid REAL)";
 	kony.db.executeSql(dbId,
 	                    sqlStatement,
 	                    null,
 	                    success_createTable,
 	                    commonErrorCallback);
-	
 	var insertTable = [ [ "George", 10 ],
 	[ "John", 10 ],
 	[ "Thomas", 20 ],
@@ -145,14 +143,13 @@ function createTable_Tablet( dbId )
 *	Purpose : To create the database with employee_details table
 ******************************************************************/
 
-function createDB(  )
+function createDB()
 {
 	webSQLFlag = 1;
 	baseObjectId = kony.db.openDatabase("webSqlDB",
 	                                     "1.0",
 	                                     "Sample SQL Database",
-	                                     5 * 1024 * 1024);// 5MB database
-	                                     
+	                                     5 * 1024 * 1024);// 5MB database                            
 	kony.db.transaction(baseObjectId,
 	                     createTable,
 	                     commonErrorCallback,
@@ -229,6 +226,12 @@ function insertFirstData_Tablet( dbId )
 
 function doTransactioninsertData()
 {	
+	//#ifdef desktopweb
+		frmOfflineData.lblSqlUpdate.text ="";
+	//#else
+		frmWebSQL.lblSqlUpdate.text ="";
+	//#endif
+	
 	try
 	{
 		if (webSQLFlag == 0)
@@ -286,6 +289,7 @@ function success_sqlSelect( transactionId, resultset )
 	if(resultset != null)
 	{
 		var numResults = resultset.rows.length;
+		frmWebSQLResults.segResultData2.setVisibility(true);
 		var insertTable = [ { lblEmpID : "empid", lblEmpName : "empname", lblDepId : "depid" }  ];
 		for ( var i = 0; i <= numResults - 4; i++ )
 		{
@@ -456,6 +460,7 @@ function sqlSelect_Update(dbId){
 
 function  success_sqlSelect_Update(transactionId, resultset){
 		var numResults = resultset.rows.length;
+		frmWebSQLResults.segResultData2.setVisibility(true);
 		var insertTable = [ { lblEmpID : "empid", lblEmpName : "empname", lblDepId : "depid" }  ];
 		for ( var i = 1; i <= numResults - 1; i++ )
 		{
@@ -780,6 +785,7 @@ function  success_sqlSelect_Delete(transactionId, resultset){
 		frmWebSQLResults.segResultData.setData (insertTable);
 		insertTable = [];
 		frmWebSQLResults.segResultData2.setData(insertTable);
+		frmWebSQLResults.segResultData2.setVisibility(false);
 		frmWebSQLResults.show();
 		alert("Executed DELETE FROM emp_details WHERE empid=(select max(empid) from emp_details");
 		//frmOfflineData.lblSqlUpdate.text = "";

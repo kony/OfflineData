@@ -14,12 +14,17 @@ This Application will showcase the following features of Offline Data and WebSQL
 **Mobile**
  * Android
  * iPhone
+ * Blackberry
+ * Windows 7.5
+ * Windows 8
  * SPA Android
  * SPA iPhone
+ * SPA Blackberry
  
 **Tablet** 
  * Android
  * iPad
+ * Windows 8
  * SPA iPad
  * SPA Android
  
