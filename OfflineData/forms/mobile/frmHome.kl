@@ -515,7 +515,7 @@
             <rightTitleI18Key>None</rightTitleI18Key>
             <rightbtnImgPath></rightbtnImgPath>
             <rightbuttonI18Key>None</rightbuttonI18Key>
-            <skinID>sknTitleBarSampleApp</skinID>
+            <skinID>sknTitleKonyTheme</skinID>
             <usrDefFunction></usrDefFunction>
             <visible>true</visible>
             <textChecked>true</textChecked>
@@ -692,7 +692,7 @@
         <symbian_defaultOutTransition>true</symbian_defaultOutTransition>
         <androidTitleBarData>
             <background_image></background_image>
-            <skinID>sknTitleBarSampleApp</skinID>
+            <skinID>sknTitleKonyTheme</skinID>
             <visible>true</visible>
         </androidTitleBarData>
         <android_softkeyMode>SoftInput adjust resize</android_softkeyMode>
@@ -2148,7 +2148,7 @@
                         <left>0</left>
                         <right>0</right>
                         <top>0</top>
-                        <bottom>3</bottom>
+                        <bottom>1</bottom>
                         <unit>%</unit>
                     </android>
                     <android_override>true</android_override>
@@ -2204,7 +2204,7 @@
                         <left>0</left>
                         <right>0</right>
                         <top>0</top>
-                        <bottom>7</bottom>
+                        <bottom>4</bottom>
                         <unit>%</unit>
                     </iphonerc>
                     <iphonerc_override>true</iphonerc_override>
@@ -2333,7 +2333,7 @@
                         <left>0</left>
                         <right>0</right>
                         <top>0</top>
-                        <bottom>50</bottom>
+                        <bottom>7</bottom>
                         <unit>%</unit>
                     </spaBB>
                     <spaBBNth>
@@ -2677,7 +2677,7 @@
                     </xhtmlNormal>
                     <xhtmlNormal_override>false</xhtmlNormal_override>
                 </paddings>
-                <SText>bullet.png</SText>
+                <SText>blackbullet.png</SText>
                 <overridePerferred>
                     <width>false</width>
                     <height>false</height>
@@ -4152,7 +4152,7 @@
                         <left>0</left>
                         <right>0</right>
                         <top>0</top>
-                        <bottom>3</bottom>
+                        <bottom>1</bottom>
                         <unit>%</unit>
                     </android>
                     <android_override>true</android_override>
@@ -4208,7 +4208,7 @@
                         <left>0</left>
                         <right>0</right>
                         <top>0</top>
-                        <bottom>7</bottom>
+                        <bottom>4</bottom>
                         <unit>%</unit>
                     </iphonerc>
                     <iphonerc_override>true</iphonerc_override>
@@ -4337,7 +4337,7 @@
                         <left>0</left>
                         <right>0</right>
                         <top>0</top>
-                        <bottom>50</bottom>
+                        <bottom>7</bottom>
                         <unit>%</unit>
                     </spaBB>
                     <spaBBNth>
@@ -4681,7 +4681,7 @@
                     </xhtmlNormal>
                     <xhtmlNormal_override>false</xhtmlNormal_override>
                 </paddings>
-                <SText>bullet.png</SText>
+                <SText>blackbullet.png</SText>
                 <overridePerferred>
                     <width>false</width>
                     <height>false</height>
@@ -6144,7 +6144,7 @@
                 <width>100</width>
                 <height>6</height>
             </sizePercent>
-            <skinId>sknLblSPATitle</skinId>
+            <skinId>sknLblKonyThemeAppHeader</skinId>
             <focusSkinId>Skin Defaults</focusSkinId>
             <localeId>None</localeId>
             <visible>true</visible>
@@ -7441,7 +7441,7 @@
                     <width>100</width>
                     <height>100</height>
                 </sizePercent>
-                <skinId>sknLblSPATitle</skinId>
+                <skinId>sknLblKonyThemeAppHeader</skinId>
                 <focusSkinId>Skin Defaults</focusSkinId>
                 <localeId>None</localeId>
                 <visible>true</visible>
@@ -8121,6 +8121,8 @@
             </evtSequence>
         </bb10_onEscape10_root>
         <bb10_softkeyMode>FORM_ADJUST_RESIZE</bb10_softkeyMode>
+        <bb10_showbottomactionbar>true</bb10_showbottomactionbar>
+        <bb10_enablepeekgesture>true</bb10_enablepeekgesture>
     </children>
     <children xsi:type="kMenuContainer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <ID></ID>

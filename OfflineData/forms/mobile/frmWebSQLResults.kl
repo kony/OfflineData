@@ -487,7 +487,7 @@
             <leftButtonFocusSkinID>Skin Defaults</leftButtonFocusSkinID>
             <leftButtonI18Key>None</leftButtonI18Key>
             <leftButtonSkinID>Skin Defaults</leftButtonSkinID>
-            <leftButtonText>Back</leftButtonText>
+            <leftButtonText></leftButtonText>
             <leftEvtData>
                 <function>None</function>
                 <serviceType>0</serviceType>
@@ -498,14 +498,14 @@
                 <serviceType>0</serviceType>
             </leftImgEvtData>
             <leftPrevTitle>false</leftPrevTitle>
-            <leftSideView>1</leftSideView>
+            <leftSideView>2</leftSideView>
             <leftTitle>Back</leftTitle>
             <leftTitleEvtData>
                 <function>None</function>
                 <serviceType>0</serviceType>
             </leftTitleEvtData>
             <leftTitleI18Key>None</leftTitleI18Key>
-            <leftbtnImgPath></leftbtnImgPath>
+            <leftbtnImgPath>back_ico.png</leftbtnImgPath>
             <rightSideView>0</rightSideView>
             <rightTitle></rightTitle>
             <rightTitleEvtData>
@@ -515,7 +515,7 @@
             <rightTitleI18Key>None</rightTitleI18Key>
             <rightbtnImgPath></rightbtnImgPath>
             <rightbuttonI18Key>None</rightbuttonI18Key>
-            <skinID>sknTitleBarSampleApp</skinID>
+            <skinID>sknTitleKonyTheme</skinID>
             <usrDefFunction></usrDefFunction>
             <visible>true</visible>
             <textChecked>true</textChecked>
@@ -692,7 +692,7 @@
         <symbian_defaultOutTransition>true</symbian_defaultOutTransition>
         <androidTitleBarData>
             <background_image></background_image>
-            <skinID>sknTitleBarSampleApp</skinID>
+            <skinID>sknTitleKonyTheme</skinID>
             <visible>true</visible>
         </androidTitleBarData>
         <android_softkeyMode>SoftInput adjust resize</android_softkeyMode>
@@ -1499,16 +1499,8 @@
             <tc_border>3</tc_border>
             <tc_defaultSelection>true</tc_defaultSelection>
             <tc_postOnclickJs>
-                <evtSequence>
-                    <enabled>true</enabled>
-                    <seqname></seqname>
-                </evtSequence>
             </tc_postOnclickJs>
             <tc_preOnclickJs>
-                <evtSequence>
-                    <enabled>true</enabled>
-                    <seqname></seqname>
-                </evtSequence>
             </tc_preOnclickJs>
             <blockedSkin>Skin Defaults</blockedSkin>
             <spaBlockedUISkin>Skin Defaults</spaBlockedUISkin>
@@ -2151,6 +2143,7 @@
                 </gridviewConfig>
                 <symbian_position>0</symbian_position>
                 <tooltip></tooltip>
+                <tc_position>0</tc_position>
                 <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                 <wapDirection>0</wapDirection>
                 <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -2189,7 +2182,7 @@
                         <width>33</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -2835,7 +2828,7 @@
                         <width>33</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -3481,7 +3474,7 @@
                         <width>34</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -4137,7 +4130,7 @@
                 <width>100</width>
                 <height>6</height>
             </sizePercent>
-            <skinId>sknLblSPATitle</skinId>
+            <skinId>sknLblKonyThemeAppHeader</skinId>
             <focusSkinId>Skin Defaults</focusSkinId>
             <localeId>None</localeId>
             <visible>true</visible>
@@ -4167,17 +4160,17 @@
                 <tabspaspa_android>true</tabspaspa_android>
                 <tc_spaandroid>true</tc_spaandroid>
                 <tc_spabb>true</tc_spabb>
-                <tc_spabb_nth>true</tc_spabb_nth>
+                <tc_spabb_nth>false</tc_spabb_nth>
                 <tc_spaiphone>true</tc_spaiphone>
-                <tc_spawindows>true</tc_spawindows>
-                <tc_spawinphone8>true</tc_spawinphone8>
-                <tc_xhtml>true</tc_xhtml>
+                <tc_spawindows>false</tc_spawindows>
+                <tc_spawinphone8>false</tc_spawinphone8>
+                <tc_xhtml>false</tc_xhtml>
                 <tc_xhtml_advandroid1>true</tc_xhtml_advandroid1>
                 <tc_xhtml_advbb>true</tc_xhtml_advbb>
                 <tc_xhtml_adviphone1>true</tc_xhtml_adviphone1>
                 <tc_xhtml_advnth>true</tc_xhtml_advnth>
-                <tc_xhtml_advpalm1>true</tc_xhtml_advpalm1>
-                <tc_xhtml_js>true</tc_xhtml_js>
+                <tc_xhtml_advpalm1>false</tc_xhtml_advpalm1>
+                <tc_xhtml_js>false</tc_xhtml_js>
                 <wrapper_android>false</wrapper_android>
                 <wrapper_android_tab>true</wrapper_android_tab>
                 <wrapper_bb>false</wrapper_bb>
@@ -5492,16 +5485,8 @@
             <tc_border>3</tc_border>
             <tc_defaultSelection>true</tc_defaultSelection>
             <tc_postOnclickJs>
-                <evtSequence>
-                    <enabled>true</enabled>
-                    <seqname></seqname>
-                </evtSequence>
             </tc_postOnclickJs>
             <tc_preOnclickJs>
-                <evtSequence>
-                    <enabled>true</enabled>
-                    <seqname></seqname>
-                </evtSequence>
             </tc_preOnclickJs>
             <blockedSkin>Skin Defaults</blockedSkin>
             <spaBlockedUISkin>Skin Defaults</spaBlockedUISkin>
@@ -6144,6 +6129,7 @@
                 </gridviewConfig>
                 <symbian_position>0</symbian_position>
                 <tooltip></tooltip>
+                <tc_position>0</tc_position>
                 <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                 <wapDirection>0</wapDirection>
                 <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -6182,7 +6168,7 @@
                         <width>33</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -6828,7 +6814,7 @@
                         <width>33</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -7474,7 +7460,7 @@
                         <width>34</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -8130,7 +8116,7 @@
                 <width>100</width>
                 <height>6</height>
             </sizePercent>
-            <skinId>sknLblSPATitle</skinId>
+            <skinId>sknLblKonyThemeAppHeader</skinId>
             <focusSkinId>Skin Defaults</focusSkinId>
             <localeId>None</localeId>
             <visible>true</visible>
@@ -8800,6 +8786,8 @@
             </evtSequence>
         </bb10_onEscape10_root>
         <bb10_softkeyMode>FORM_ADJUST_RESIZE</bb10_softkeyMode>
+        <bb10_showbottomactionbar>true</bb10_showbottomactionbar>
+        <bb10_enablepeekgesture>true</bb10_enablepeekgesture>
     </children>
     <children xsi:type="kMenuContainer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <ID></ID>

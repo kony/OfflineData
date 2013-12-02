@@ -1450,6 +1450,7 @@
             </gridviewConfig>
             <symbian_position>0</symbian_position>
             <tooltip></tooltip>
+            <tc_position>0</tc_position>
             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
             <wapDirection>0</wapDirection>
             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -2735,6 +2736,7 @@
                     </gridviewConfig>
                     <symbian_position>0</symbian_position>
                     <tooltip></tooltip>
+                    <tc_position>0</tc_position>
                     <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                     <wapDirection>0</wapDirection>
                     <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -4176,16 +4178,8 @@
                             <tc_border>3</tc_border>
                             <tc_defaultSelection>true</tc_defaultSelection>
                             <tc_postOnclickJs>
-                                <evtSequence>
-                                    <enabled>true</enabled>
-                                    <seqname></seqname>
-                                </evtSequence>
                             </tc_postOnclickJs>
                             <tc_preOnclickJs>
-                                <evtSequence>
-                                    <enabled>true</enabled>
-                                    <seqname></seqname>
-                                </evtSequence>
                             </tc_preOnclickJs>
                             <blockedSkin>Skin Defaults</blockedSkin>
                             <spaBlockedUISkin>Skin Defaults</spaBlockedUISkin>
@@ -4813,6 +4807,7 @@
                                 <ipad_longtext>false</ipad_longtext>
                                 <ipad_wrapping>0</ipad_wrapping>
                                 <ipad_content_align>0</ipad_content_align>
+                                <c_ToolTip></c_ToolTip>
                                 <tooltip></tooltip>
                                 <bb_longtext>false</bb_longtext>
                                 <bb_content_align>0</bb_content_align>
@@ -6128,6 +6123,7 @@
                     </gridviewConfig>
                     <symbian_position>0</symbian_position>
                     <tooltip></tooltip>
+                    <tc_position>0</tc_position>
                     <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                     <wapDirection>0</wapDirection>
                     <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -7454,6 +7450,7 @@
                             </gridviewConfig>
                             <symbian_position>0</symbian_position>
                             <tooltip></tooltip>
+                            <tc_position>0</tc_position>
                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                             <wapDirection>0</wapDirection>
                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -8739,6 +8736,7 @@
                                     </gridviewConfig>
                                     <symbian_position>0</symbian_position>
                                     <tooltip></tooltip>
+                                    <tc_position>0</tc_position>
                                     <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                     <wapDirection>0</wapDirection>
                                     <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -10009,6 +10007,7 @@
                                             <ipad_longtext>false</ipad_longtext>
                                             <ipad_wrapping>0</ipad_wrapping>
                                             <ipad_content_align>0</ipad_content_align>
+                                            <c_ToolTip></c_ToolTip>
                                             <tooltip></tooltip>
                                             <bb_longtext>false</bb_longtext>
                                             <bb_content_align>0</bb_content_align>
@@ -10669,6 +10668,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -11322,6 +11322,7 @@
                                                 </onClick>
                                                 <autoCapitalize>TEXTBOX_AUTO_CAPITALIZE_NONE</autoCapitalize>
                                                 <placeholder>Key</placeholder>
+                                                <placeholder_I18N></placeholder_I18N>
                                                 <keyboard_type>0</keyboard_type>
                                                 <overrideProperties>KTextBox2.android_placeholderSkin</overrideProperties>
                                                 <overrideProperties>KTextBox2.ipad_placeholderSkin</overrideProperties>
@@ -11391,6 +11392,18 @@
                                                 <tc_autocorrect>false</tc_autocorrect>
                                                 <tcPostOnclickJs></tcPostOnclickJs>
                                                 <tcPreOnclickJs></tcPreOnclickJs>
+                                                <spa_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onBeginEditing>
+                                                <spa_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onEndEditing>
                                                 <spa_autoComplete>false</spa_autoComplete>
                                                 <bb_autoFilter>false</bb_autoFilter>
                                                 <bb10_autoFilter>false</bb10_autoFilter>
@@ -11435,6 +11448,18 @@
                                                 <iphone_contentAlignment>1</iphone_contentAlignment>
                                                 <ipad_content_align>1</ipad_content_align>
                                                 <bb_content_align>1</bb_content_align>
+                                                <bb10_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onBeginEditing>
+                                                <bb10_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onEndEditing>
                                                 <bb10_content_align>1</bb10_content_align>
                                                 <j2me_content_align>1</j2me_content_align>
                                                 <android_content_align>4</android_content_align>
@@ -12090,6 +12115,7 @@
                                                 </onClick>
                                                 <autoCapitalize>TEXTBOX_AUTO_CAPITALIZE_NONE</autoCapitalize>
                                                 <placeholder>Value</placeholder>
+                                                <placeholder_I18N></placeholder_I18N>
                                                 <keyboard_type>0</keyboard_type>
                                                 <overrideProperties>KTextBox2.android_placeholderSkin</overrideProperties>
                                                 <overrideProperties>KTextBox2.ipad_placeholderSkin</overrideProperties>
@@ -12159,6 +12185,18 @@
                                                 <tc_autocorrect>false</tc_autocorrect>
                                                 <tcPostOnclickJs></tcPostOnclickJs>
                                                 <tcPreOnclickJs></tcPreOnclickJs>
+                                                <spa_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onBeginEditing>
+                                                <spa_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onEndEditing>
                                                 <spa_autoComplete>false</spa_autoComplete>
                                                 <bb_autoFilter>false</bb_autoFilter>
                                                 <bb10_autoFilter>false</bb10_autoFilter>
@@ -12203,6 +12241,18 @@
                                                 <iphone_contentAlignment>1</iphone_contentAlignment>
                                                 <ipad_content_align>1</ipad_content_align>
                                                 <bb_content_align>1</bb_content_align>
+                                                <bb10_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onBeginEditing>
+                                                <bb10_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onEndEditing>
                                                 <bb10_content_align>1</bb10_content_align>
                                                 <j2me_content_align>1</j2me_content_align>
                                                 <android_content_align>4</android_content_align>
@@ -12864,6 +12914,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -13541,6 +13592,7 @@
                                                 <bb_content_align>1</bb_content_align>
                                                 <bb_display_text>true</bb_display_text>
                                                 <j2me_content_align>1</j2me_content_align>
+                                                <c_ToolTip></c_ToolTip>
                                                 <tooltip></tooltip>
                                                 <android_display_text>true</android_display_text>
                                                 <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -14254,6 +14306,7 @@
                                     </gridviewConfig>
                                     <symbian_position>0</symbian_position>
                                     <tooltip></tooltip>
+                                    <tc_position>0</tc_position>
                                     <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                     <wapDirection>0</wapDirection>
                                     <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -15524,6 +15577,7 @@
                                             <ipad_longtext>false</ipad_longtext>
                                             <ipad_wrapping>0</ipad_wrapping>
                                             <ipad_content_align>0</ipad_content_align>
+                                            <c_ToolTip></c_ToolTip>
                                             <tooltip></tooltip>
                                             <bb_longtext>false</bb_longtext>
                                             <bb_content_align>0</bb_content_align>
@@ -16184,6 +16238,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -16837,6 +16892,7 @@
                                                 </onClick>
                                                 <autoCapitalize>TEXTBOX_AUTO_CAPITALIZE_NONE</autoCapitalize>
                                                 <placeholder>Key</placeholder>
+                                                <placeholder_I18N></placeholder_I18N>
                                                 <keyboard_type>0</keyboard_type>
                                                 <overrideProperties>KTextBox2.android_placeholderSkin</overrideProperties>
                                                 <overrideProperties>KTextBox2.ipad_placeholderSkin</overrideProperties>
@@ -16906,6 +16962,18 @@
                                                 <tc_autocorrect>false</tc_autocorrect>
                                                 <tcPostOnclickJs></tcPostOnclickJs>
                                                 <tcPreOnclickJs></tcPreOnclickJs>
+                                                <spa_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onBeginEditing>
+                                                <spa_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onEndEditing>
                                                 <spa_autoComplete>false</spa_autoComplete>
                                                 <bb_autoFilter>false</bb_autoFilter>
                                                 <bb10_autoFilter>false</bb10_autoFilter>
@@ -16950,6 +17018,18 @@
                                                 <iphone_contentAlignment>1</iphone_contentAlignment>
                                                 <ipad_content_align>1</ipad_content_align>
                                                 <bb_content_align>1</bb_content_align>
+                                                <bb10_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onBeginEditing>
+                                                <bb10_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onEndEditing>
                                                 <bb10_content_align>1</bb10_content_align>
                                                 <j2me_content_align>1</j2me_content_align>
                                                 <android_content_align>4</android_content_align>
@@ -17587,6 +17667,7 @@
                                                 <ipad_longtext>false</ipad_longtext>
                                                 <ipad_wrapping>0</ipad_wrapping>
                                                 <ipad_content_align>0</ipad_content_align>
+                                                <c_ToolTip></c_ToolTip>
                                                 <tooltip></tooltip>
                                                 <bb_longtext>false</bb_longtext>
                                                 <bb_content_align>0</bb_content_align>
@@ -18256,6 +18337,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -18933,6 +19015,7 @@
                                                 <bb_content_align>1</bb_content_align>
                                                 <bb_display_text>true</bb_display_text>
                                                 <j2me_content_align>1</j2me_content_align>
+                                                <c_ToolTip></c_ToolTip>
                                                 <tooltip></tooltip>
                                                 <android_display_text>true</android_display_text>
                                                 <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -19646,6 +19729,7 @@
                                     </gridviewConfig>
                                     <symbian_position>0</symbian_position>
                                     <tooltip></tooltip>
+                                    <tc_position>0</tc_position>
                                     <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                     <wapDirection>0</wapDirection>
                                     <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -20916,6 +21000,7 @@
                                             <ipad_longtext>false</ipad_longtext>
                                             <ipad_wrapping>0</ipad_wrapping>
                                             <ipad_content_align>0</ipad_content_align>
+                                            <c_ToolTip></c_ToolTip>
                                             <tooltip></tooltip>
                                             <bb_longtext>false</bb_longtext>
                                             <bb_content_align>0</bb_content_align>
@@ -21576,6 +21661,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -22229,6 +22315,7 @@
                                                 </onClick>
                                                 <autoCapitalize>TEXTBOX_AUTO_CAPITALIZE_NONE</autoCapitalize>
                                                 <placeholder>Index</placeholder>
+                                                <placeholder_I18N></placeholder_I18N>
                                                 <keyboard_type>0</keyboard_type>
                                                 <overrideProperties>KTextBox2.android_placeholderSkin</overrideProperties>
                                                 <overrideProperties>KTextBox2.ipad_placeholderSkin</overrideProperties>
@@ -22298,6 +22385,18 @@
                                                 <tc_autocorrect>false</tc_autocorrect>
                                                 <tcPostOnclickJs></tcPostOnclickJs>
                                                 <tcPreOnclickJs></tcPreOnclickJs>
+                                                <spa_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onBeginEditing>
+                                                <spa_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onEndEditing>
                                                 <spa_autoComplete>false</spa_autoComplete>
                                                 <bb_autoFilter>false</bb_autoFilter>
                                                 <bb10_autoFilter>false</bb10_autoFilter>
@@ -22342,6 +22441,18 @@
                                                 <iphone_contentAlignment>1</iphone_contentAlignment>
                                                 <ipad_content_align>1</ipad_content_align>
                                                 <bb_content_align>1</bb_content_align>
+                                                <bb10_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onBeginEditing>
+                                                <bb10_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onEndEditing>
                                                 <bb10_content_align>1</bb10_content_align>
                                                 <j2me_content_align>1</j2me_content_align>
                                                 <android_content_align>4</android_content_align>
@@ -22979,6 +23090,7 @@
                                                 <ipad_longtext>false</ipad_longtext>
                                                 <ipad_wrapping>0</ipad_wrapping>
                                                 <ipad_content_align>0</ipad_content_align>
+                                                <c_ToolTip></c_ToolTip>
                                                 <tooltip></tooltip>
                                                 <bb_longtext>false</bb_longtext>
                                                 <bb_content_align>0</bb_content_align>
@@ -23648,6 +23760,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -24325,6 +24438,7 @@
                                                 <bb_content_align>1</bb_content_align>
                                                 <bb_display_text>true</bb_display_text>
                                                 <j2me_content_align>1</j2me_content_align>
+                                                <c_ToolTip></c_ToolTip>
                                                 <tooltip></tooltip>
                                                 <android_display_text>true</android_display_text>
                                                 <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -25038,6 +25152,7 @@
                                     </gridviewConfig>
                                     <symbian_position>0</symbian_position>
                                     <tooltip></tooltip>
+                                    <tc_position>0</tc_position>
                                     <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                     <wapDirection>0</wapDirection>
                                     <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -26308,6 +26423,7 @@
                                             <ipad_longtext>false</ipad_longtext>
                                             <ipad_wrapping>0</ipad_wrapping>
                                             <ipad_content_align>0</ipad_content_align>
+                                            <c_ToolTip></c_ToolTip>
                                             <tooltip></tooltip>
                                             <bb_longtext>false</bb_longtext>
                                             <bb_content_align>0</bb_content_align>
@@ -26968,6 +27084,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -27621,6 +27738,7 @@
                                                 </onClick>
                                                 <autoCapitalize>TEXTBOX_AUTO_CAPITALIZE_NONE</autoCapitalize>
                                                 <placeholder>Key</placeholder>
+                                                <placeholder_I18N></placeholder_I18N>
                                                 <keyboard_type>0</keyboard_type>
                                                 <overrideProperties>KTextBox2.android_placeholderSkin</overrideProperties>
                                                 <overrideProperties>KTextBox2.ipad_placeholderSkin</overrideProperties>
@@ -27690,6 +27808,18 @@
                                                 <tc_autocorrect>false</tc_autocorrect>
                                                 <tcPostOnclickJs></tcPostOnclickJs>
                                                 <tcPreOnclickJs></tcPreOnclickJs>
+                                                <spa_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onBeginEditing>
+                                                <spa_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </spa_onEndEditing>
                                                 <spa_autoComplete>false</spa_autoComplete>
                                                 <bb_autoFilter>false</bb_autoFilter>
                                                 <bb10_autoFilter>false</bb10_autoFilter>
@@ -27734,6 +27864,18 @@
                                                 <iphone_contentAlignment>1</iphone_contentAlignment>
                                                 <ipad_content_align>1</ipad_content_align>
                                                 <bb_content_align>1</bb_content_align>
+                                                <bb10_onBeginEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onBeginEditing>
+                                                <bb10_onEndEditing>
+                                                    <evtSequence>
+                                                        <enabled>true</enabled>
+                                                        <seqname></seqname>
+                                                    </evtSequence>
+                                                </bb10_onEndEditing>
                                                 <bb10_content_align>1</bb10_content_align>
                                                 <j2me_content_align>1</j2me_content_align>
                                                 <android_content_align>4</android_content_align>
@@ -28371,6 +28513,7 @@
                                                 <ipad_longtext>false</ipad_longtext>
                                                 <ipad_wrapping>0</ipad_wrapping>
                                                 <ipad_content_align>0</ipad_content_align>
+                                                <c_ToolTip></c_ToolTip>
                                                 <tooltip></tooltip>
                                                 <bb_longtext>false</bb_longtext>
                                                 <bb_content_align>0</bb_content_align>
@@ -29040,6 +29183,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -29717,6 +29861,7 @@
                                                 <bb_content_align>1</bb_content_align>
                                                 <bb_display_text>true</bb_display_text>
                                                 <j2me_content_align>1</j2me_content_align>
+                                                <c_ToolTip></c_ToolTip>
                                                 <tooltip></tooltip>
                                                 <android_display_text>true</android_display_text>
                                                 <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -30430,6 +30575,7 @@
                                     </gridviewConfig>
                                     <symbian_position>0</symbian_position>
                                     <tooltip></tooltip>
+                                    <tc_position>0</tc_position>
                                     <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                     <wapDirection>0</wapDirection>
                                     <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -31700,6 +31846,7 @@
                                             <ipad_longtext>false</ipad_longtext>
                                             <ipad_wrapping>0</ipad_wrapping>
                                             <ipad_content_align>0</ipad_content_align>
+                                            <c_ToolTip></c_ToolTip>
                                             <tooltip></tooltip>
                                             <bb_longtext>false</bb_longtext>
                                             <bb_content_align>0</bb_content_align>
@@ -32345,6 +32492,7 @@
                                             <ipad_longtext>false</ipad_longtext>
                                             <ipad_wrapping>0</ipad_wrapping>
                                             <ipad_content_align>0</ipad_content_align>
+                                            <c_ToolTip></c_ToolTip>
                                             <tooltip></tooltip>
                                             <bb_longtext>false</bb_longtext>
                                             <bb_content_align>0</bb_content_align>
@@ -33005,6 +33153,7 @@
                                             </gridviewConfig>
                                             <symbian_position>0</symbian_position>
                                             <tooltip></tooltip>
+                                            <tc_position>0</tc_position>
                                             <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                                             <wapDirection>0</wapDirection>
                                             <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -33682,6 +33831,7 @@
                                                 <bb_content_align>1</bb_content_align>
                                                 <bb_display_text>true</bb_display_text>
                                                 <j2me_content_align>1</j2me_content_align>
+                                                <c_ToolTip></c_ToolTip>
                                                 <tooltip></tooltip>
                                                 <android_display_text>true</android_display_text>
                                                 <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -34423,6 +34573,7 @@
                     </gridviewConfig>
                     <symbian_position>0</symbian_position>
                     <tooltip></tooltip>
+                    <tc_position>0</tc_position>
                     <TCBlockedUISkin>Skin Defaults</TCBlockedUISkin>
                     <wapDirection>0</wapDirection>
                     <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
@@ -35735,6 +35886,7 @@
                             <bb_content_align>1</bb_content_align>
                             <bb_display_text>true</bb_display_text>
                             <j2me_content_align>1</j2me_content_align>
+                            <c_ToolTip></c_ToolTip>
                             <tooltip></tooltip>
                             <android_display_text>true</android_display_text>
                             <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -36449,6 +36601,7 @@
                             <bb_content_align>1</bb_content_align>
                             <bb_display_text>true</bb_display_text>
                             <j2me_content_align>1</j2me_content_align>
+                            <c_ToolTip></c_ToolTip>
                             <tooltip></tooltip>
                             <android_display_text>true</android_display_text>
                             <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -37181,6 +37334,7 @@
                             <bb_content_align>1</bb_content_align>
                             <bb_display_text>true</bb_display_text>
                             <j2me_content_align>1</j2me_content_align>
+                            <c_ToolTip></c_ToolTip>
                             <tooltip></tooltip>
                             <android_display_text>true</android_display_text>
                             <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -37913,6 +38067,7 @@
                             <bb_content_align>1</bb_content_align>
                             <bb_display_text>true</bb_display_text>
                             <j2me_content_align>1</j2me_content_align>
+                            <c_ToolTip></c_ToolTip>
                             <tooltip></tooltip>
                             <android_display_text>true</android_display_text>
                             <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -38585,6 +38740,7 @@
                             <ipad_longtext>false</ipad_longtext>
                             <ipad_wrapping>0</ipad_wrapping>
                             <ipad_content_align>0</ipad_content_align>
+                            <c_ToolTip></c_ToolTip>
                             <tooltip></tooltip>
                             <bb_longtext>false</bb_longtext>
                             <bb_content_align>0</bb_content_align>
@@ -38667,7 +38823,7 @@
                 <width>100</width>
                 <height>6</height>
             </sizePercent>
-            <skinId>sknLblSPATitle</skinId>
+            <skinId>sknLblKonyThemeAppHeader</skinId>
             <focusSkinId>Skin Defaults</focusSkinId>
             <localeId>None</localeId>
             <visible>true</visible>
@@ -39264,6 +39420,7 @@
             <ipad_longtext>false</ipad_longtext>
             <ipad_wrapping>0</ipad_wrapping>
             <ipad_content_align>0</ipad_content_align>
+            <c_ToolTip></c_ToolTip>
             <tooltip></tooltip>
             <bb_longtext>false</bb_longtext>
             <bb_content_align>0</bb_content_align>
@@ -39335,6 +39492,8 @@
             </evtSequence>
         </bb10_onEscape10_root>
         <bb10_softkeyMode>FORM_ADJUST_RESIZE</bb10_softkeyMode>
+        <bb10_showbottomactionbar>true</bb10_showbottomactionbar>
+        <bb10_enablepeekgesture>true</bb10_enablepeekgesture>
     </children>
     <children xsi:type="kMenuContainer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <ID></ID>

@@ -445,7 +445,7 @@
         <headerOverlap>false</headerOverlap>
         <c_isModal>false</c_isModal>
         <orientation>1</orientation>
-        <display_orientation>portrait</display_orientation>
+        <display_orientation>treeView</display_orientation>
         <itemSkinId>Skin Defaults</itemSkinId>
         <itemFocusSkinId>Skin Defaults</itemFocusSkinId>
         <parentOnLoadJS></parentOnLoadJS>
@@ -565,7 +565,7 @@
             <leftButtonFocusSkinID>Skin Defaults</leftButtonFocusSkinID>
             <leftButtonI18Key>None</leftButtonI18Key>
             <leftButtonSkinID>Skin Defaults</leftButtonSkinID>
-            <leftButtonText>Back</leftButtonText>
+            <leftButtonText></leftButtonText>
             <leftEvtData>
                 <function>None</function>
                 <serviceType>0</serviceType>
@@ -583,7 +583,7 @@
                 <serviceType>0</serviceType>
             </leftTitleEvtData>
             <leftTitleI18Key>None</leftTitleI18Key>
-            <leftbtnImgPath></leftbtnImgPath>
+            <leftbtnImgPath>back_ico.png</leftbtnImgPath>
             <rightSideView>0</rightSideView>
             <rightTitle></rightTitle>
             <rightTitleEvtData>
@@ -593,7 +593,7 @@
             <rightTitleI18Key>None</rightTitleI18Key>
             <rightbtnImgPath></rightbtnImgPath>
             <rightbuttonI18Key>None</rightbuttonI18Key>
-            <skinID>sknTitleBarSampleApp</skinID>
+            <skinID>sknTitleKonyTheme</skinID>
             <usrDefFunction></usrDefFunction>
             <visible>true</visible>
             <textChecked>true</textChecked>
@@ -646,9 +646,9 @@
         <winphone8_backButton>false</winphone8_backButton>
         <winphone8_maxappmenubuttons>4</winphone8_maxappmenubuttons>
         <win8TitleBarData>
-            <backButtonSkin>sknbtnW8</backButtonSkin>
+            <backButtonSkin>sknBtnNormalSampleApp</backButtonSkin>
             <showBackButton>true</showBackButton>
-            <skinID>sknTitleBarSampleApp</skinID>
+            <skinID>sknTitleKonyTheme</skinID>
             <visible>true</visible>
         </win8TitleBarData>
         <android_orientation>2</android_orientation>
@@ -692,7 +692,7 @@
         <symbian_defaultOutTransition>true</symbian_defaultOutTransition>
         <androidTitleBarData>
             <background_image></background_image>
-            <skinID>sknTitleBarSampleApp</skinID>
+            <skinID>sknTitleKonyTheme</skinID>
             <visible>true</visible>
         </androidTitleBarData>
         <android_softkeyMode>SoftInput adjust resize</android_softkeyMode>
@@ -981,8 +981,8 @@
                 <thinclient_override>false</thinclient_override>
                 <type>1</type>
                 <windows8>
-                    <left>10</left>
-                    <right>10</right>
+                    <left>7</left>
+                    <right>7</right>
                     <top>2</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
@@ -2182,7 +2182,7 @@
                         <width>33</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>sknLblKonyThemeNormal</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -2828,7 +2828,7 @@
                         <width>33</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>sknLblKonyThemeNormal</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -3474,7 +3474,7 @@
                         <width>34</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>sknLblKonyThemeNormal</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -4130,7 +4130,7 @@
                 <width>100</width>
                 <height>6</height>
             </sizePercent>
-            <skinId>sknLblSPATitle</skinId>
+            <skinId>sknLblKonyThemeAppHeader</skinId>
             <focusSkinId>Skin Defaults</focusSkinId>
             <localeId>None</localeId>
             <visible>true</visible>
@@ -4967,9 +4967,9 @@
                 <thinclient_override>false</thinclient_override>
                 <type>1</type>
                 <windows8>
-                    <left>10</left>
-                    <right>10</right>
-                    <top>2</top>
+                    <left>7</left>
+                    <right>7</right>
+                    <top>0</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </windows8>
@@ -6168,7 +6168,7 @@
                         <width>33</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -6814,7 +6814,7 @@
                         <width>33</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
@@ -7460,7 +7460,7 @@
                         <width>34</width>
                         <height>100</height>
                     </sizePercent>
-                    <skinId>sknLblBlackFont</skinId>
+                    <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
