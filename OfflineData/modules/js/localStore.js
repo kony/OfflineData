@@ -1,7 +1,7 @@
 /*****************************************************************
 *	Name    : setItemvalues
 *	Author  : Kony 
-*	Purpose : To set items on to the local store by taking key and value from the user.
+*	Purpose : To set items on to the local store by taking key and value from the user. kony.decrement
 ******************************************************************/
 
 function setItemvalues(  )
@@ -143,14 +143,14 @@ function GetKey(  )
 	{
 	    try
 	    {
-			var key = kony.store.key(kony.decrement(kony.os.toNumber(frmOfflineData.txtReadKeyIndex.text)));
+			var key = kony.store.key(kony.os.toNumber(frmOfflineData.txtReadKeyIndex.text)); //kony.decrement(
 		}
-		catch (err) 
-		{
+		catch (err) {
+
 	// todo: handle exception
 		kony.print("\n"+err+"\n");
     	}
-	}
+    	}
 		if((key != null))
 			alert(key);
 		else
@@ -159,13 +159,13 @@ function GetKey(  )
 		if (frmLocalStore.txtReadKeyIndex.text == "" || frmLocalStore.txtReadKeyIndex.text == null)
 	{
 		alert("Index is not entered");
-		return;
+		return ;
 	}
 	else
 	{
 	    try
 	    {
-			var key = kony.store.key(kony.decrement(kony.os.toNumber(frmLocalStore.txtReadKeyIndex.text)));
+			var key = kony.store.key(kony.os.toNumber(frmLocalStore.txtReadKeyIndex.text));//kony.decrement(
 		}
 		catch (err) 
 		{
@@ -196,7 +196,7 @@ function GetKey_Tablet(  )
 	{
 	    try
 	    {
-			var key = kony.store.key(kony.decrement(kony.os.toNumber(frmOfflineData.txtReadKeyIndex.text)));
+			var key = kony.store.key(kony.os.toNumber(frmOfflineData.txtReadKeyIndex.text));//kony.decrement(
 		}
 		catch (err) 
 		{

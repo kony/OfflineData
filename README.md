@@ -17,8 +17,8 @@ This Application will showcase the following features of Offline Data and WebSQL
  * Blackberry
  * Windows 7.5
  * Windows 8
- * SPA Android
  * SPA iPhone
+ * SPA Android
  * SPA Blackberry
  
 **Tablet** 
