@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <plugins>
-    <pluginInfo plugin-name="Kony Studio" plugin-id="com.pat.tool.keditor.KEditorPlugin" version-no="5.5.39.QA_v201312161549"/>
+    <pluginInfo plugin-name="Kony Studio" plugin-id="com.pat.tool.keditor.KEditorPlugin" version-no="5.5.39.QA_v201312181548_r1"/>
     <pluginInfo plugin-name="Third Party Jars Plug-in" version-no="5.5.10.QA_v201311271640"/>
     <pluginInfo plugin-name="Soap UI Plugin" plugin-id="com.pat.soapui.SoapUIPlugin" version-no="5.5.5.QA_v201310211059"/>
-    <pluginInfo plugin-name="Kony Codegenerator" version-no="5.5.28.QA_v201312121304"/>
-    <pluginInfo plugin-name="KonyHelp Plug-in" plugin-id="com.kony.help.Activator" version-no="5.5.12.QA_v201311271742"/>
+    <pluginInfo plugin-name="Kony Codegenerator" version-no="5.5.29.QA_v201312191431"/>
+    <pluginInfo plugin-name="KonyHelp Plug-in" plugin-id="com.kony.help.Activator" version-no="5.5.13.QA_v201312061438"/>
     <pluginInfo plugin-name="Nativecodegen" plugin-id="com.kony.nativecodegen.NativeCodeGenPlugin" version-no="5.5.0.GA_v201311292048"/>
     <pluginInfo plugin-name="Kony Studio Licensing" version-no="5.5.0.beta2_v201309291420"/>
     <pluginInfo plugin-name="CloudMiddlewarePlugin" plugin-id="com.kony.cloudmiddleware.Activator" version-no="5.5.19.QA_v201312031942_r3"/>
@@ -19,9 +19,9 @@
     <pluginInfo plugin-name="Android" plugin-id="com.pat.android.Activator" version-no="5.5.30.QA_v201312161313"/>
     <pluginInfo plugin-name="ThinClient" plugin-id="thinclientplugin.Activator" version-no="5.5.14.QA_v201312101838"/>
     <pluginInfo plugin-name="Windows Desktop Plug-in" plugin-id="com.kony.windows.WinDesktopPlugin" version-no="5.5.12.QA_v201312121503"/>
-    <pluginInfo plugin-name="SPA" version-no="5.5.15.QA_v201311271455_r1"/>
+    <pluginInfo plugin-name="SPA" version-no="5.5.15.QA_v201312191226_r2"/>
     <pluginInfo plugin-name="Desktop Web" version-no="5.5.15.QA_v201311301338_r2"/>
     <pluginInfo plugin-name="Kony Sync" plugin-id="com.kony.sync.ide.SyncPlugin" version-no="5.5.57.QA_v201312161738"/>
-    <pluginInfo plugin-name="Kony Web Commons" plugin-id="com.kony.web.Activator" version-no="5.5.6.QA_v201312131319"/>
+    <pluginInfo plugin-name="Kony Web Commons" plugin-id="com.kony.web.Activator" version-no="5.5.7.QA_v201312191243"/>
     <pluginInfo plugin-name="iOS Plugin" plugin-id="iosplugin.Activator" version-no="5.5.19.QA_v201311261428"/>
 </plugins>

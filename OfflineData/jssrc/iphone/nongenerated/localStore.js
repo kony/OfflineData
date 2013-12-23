@@ -1,7 +1,7 @@
 /*****************************************************************
  *	Name    : setItemvalues
  *	Author  : Kony
- *	Purpose : To set items on to the local store by taking key and value from the user.
+ *	Purpose : To set items on to the local store by taking key and value from the user. kony.decrement
  ******************************************************************/
 function setItemvalues() {
     var key = frmLocalStore.txtSetItemkey.text;
@@ -50,6 +50,7 @@ function getItemvalues() {
     } else {
         alert("Key is not found");
     }
+    frmLocalStore.txtGetItemKey.text = "";
 }
 /*****************************************************************
  *	Name    : getItemvalues_Tab
@@ -68,6 +69,7 @@ function getItemvalues_Tab() {
     } else {
         alert("Key is not found");
     }
+    frmOfflineData.txtGetItemKey.text = "";
 }
 /*****************************************************************
  *	Name    : GetKey
@@ -80,7 +82,7 @@ function GetKey() {
         return;
     } else {
         try {
-            var key = kony.store.key(kony.decrement(kony.os.toNumber(frmLocalStore.txtReadKeyIndex.text)));
+            var key = kony.store.key(kony.os.toNumber(frmLocalStore.txtReadKeyIndex.text)); //kony.decrement(
         } catch (err) {
             // todo: handle exception
             kony.print("\n" + err + "\n");
@@ -88,6 +90,7 @@ function GetKey() {
     }
     if ((key != null)) alert(key);
     else alert("Key is not found for given Index.");
+    frmLocalStore.txtReadKeyIndex.text = "";
 }
 /*****************************************************************
  *	Name    : GetKey_Tablet
@@ -100,7 +103,7 @@ function GetKey_Tablet() {
         return;
     } else {
         try {
-            var key = kony.store.key(kony.decrement(kony.os.toNumber(frmOfflineData.txtReadKeyIndex.text)));
+            var key = kony.store.key(kony.os.toNumber(frmOfflineData.txtReadKeyIndex.text)); //kony.decrement(
         } catch (err) {
             // todo: handle exception
             kony.print("\n" + err + "\n");
@@ -108,6 +111,7 @@ function GetKey_Tablet() {
     }
     if ((key != null)) alert(key);
     else alert("Key is not found for given Index.");
+    frmOfflineData.txtReadKeyIndex.text = "";
 }
 /*****************************************************************
  *	Name    : RemoveItem
@@ -126,6 +130,7 @@ function RemoveItem() {
     } else {
         alert(textkey + " not found");
     }
+    frmLocalStore.txtRemoveItemKey.text = "";
 }
 /*****************************************************************
  *	Name    : RemoveItem_Tablet
@@ -144,6 +149,7 @@ function RemoveItem_Tablet() {
     } else {
         alert(textkey + " not found");
     }
+    frmOfflineData.txtRemoveItemKey.text = "";
 }
 /*****************************************************************
  *	Name    : ClearItem
@@ -154,10 +160,10 @@ function ClearItem() {
     kony.store.clear();
     alert("Local Storage is cleared");
     frmLocalStore.txtGetItemKey.text = "";
-    frmLocalStore.lblGetItemMessage.text = "";
+    /* frmLocalStore.lblGetItemMessage.text ="";*/
     frmLocalStore.txtRemoveItemKey.text = "";
-    frmLocalStore.lblRemoveItemMessage.text = "";
-    frmLocalStore.lblReadKeyMessage.text = "";
+    /*frmLocalStore.lblRemoveItemMessage.text="";*/
+    /*frmLocalStore.lblReadKeyMessage.text="";*/
     frmLocalStore.txtReadKeyIndex.text = "";
 }
 /*****************************************************************
@@ -169,10 +175,7 @@ function ClearItem_Tablet() {
     kony.store.clear();
     alert("Local Storage is cleared");
     frmOfflineData.txtGetItemKey.text = "";
-    frmOfflineData.lblGetItemMessage.text = "";
     frmOfflineData.txtRemoveItemKey.text = "";
-    frmOfflineData.lblRemoveItemMessage.text = "";
-    frmOfflineData.lblReadKeyMessage.text = "";
     frmOfflineData.txtReadKeyIndex.text = "";
 }
 /*****************************************************************

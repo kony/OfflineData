@@ -4,9 +4,9 @@
 *	Purpose : To set items on to the local store by taking key and value from the user. kony.decrement
 ******************************************************************/
 
-function setItemvalues(  )
+function setItemvalues( )
 {
-	//#ifdef desktopweb
+    //#ifdef desktopweb
 	var key = frmOfflineData.txtSetItemkey.text;
 	var value = frmOfflineData.txtSetItemValue.text;
 	if( frmOfflineData.txtSetItemValue.text == ""  || frmOfflineData.txtSetItemkey.text == "" || frmOfflineData.txtSetItemkey.text == null || frmOfflineData.txtSetItemValue.text == null  )
@@ -81,6 +81,7 @@ function getItemvalues(  )
 	{
 		alert("Key is not found");
 	}
+	frmOfflineData.txtGetItemKey.text ="";
 	//#else
 		if (frmLocalStore.txtGetItemKey.text == "" || frmLocalStore.txtGetItemKey.text == null)
 	{
@@ -98,7 +99,9 @@ function getItemvalues(  )
 	{
 		alert("Key is not found");
 	}
+	frmLocalStore.txtGetItemKey.text ="";
 	//#endif
+   
 }
 /*****************************************************************
 *	Name    : getItemvalues_Tab
@@ -123,6 +126,7 @@ function getItemvalues_Tab(  )
 	{
 		alert("Key is not found");
 	}
+	frmOfflineData.txtGetItemKey.text ="";
 }
 
 /*****************************************************************
@@ -155,6 +159,8 @@ function GetKey(  )
 			alert(key);
 		else
 			alert("Key is not found for given Index.");
+			
+		frmOfflineData.txtReadKeyIndex.text ="";
 	//#else
 		if (frmLocalStore.txtReadKeyIndex.text == "" || frmLocalStore.txtReadKeyIndex.text == null)
 	{
@@ -177,6 +183,8 @@ function GetKey(  )
 			alert(key);
 		else
 			alert("Key is not found for given Index.");
+	
+	frmLocalStore.txtReadKeyIndex.text ="";
 	//#endif
 }
 /*****************************************************************
@@ -208,6 +216,8 @@ function GetKey_Tablet(  )
 			alert(key);
 		else
 			alert("Key is not found for given Index.");
+			
+		frmOfflineData.txtReadKeyIndex.text ="";
 }
 /*****************************************************************
 *	Name    : RemoveItem
@@ -236,6 +246,8 @@ function RemoveItem(  )
 	{
 		alert(textkey + " not found");
 	}
+	
+	frmOfflineData.txtRemoveItemKey.text ="";
 	//#else
 		if (frmLocalStore.txtRemoveItemKey.text == "" || frmLocalStore.txtRemoveItemKey.text == null )
 	{
@@ -255,6 +267,8 @@ function RemoveItem(  )
 	{
 		alert(textkey + " not found");
 	}
+	
+	frmLocalStore.txtRemoveItemKey.text ="";
 	//#endif	
 }
 /*****************************************************************
@@ -284,6 +298,7 @@ function RemoveItem_Tablet(  )
 	{
 		alert(textkey + " not found");
 	}
+	frmOfflineData.txtRemoveItemKey.text ="";
 	//#else
 		if (frmOfflineData.txtRemoveItemKey.text == "" || frmOfflineData.txtRemoveItemKey.text == null )
 	{
@@ -303,6 +318,7 @@ function RemoveItem_Tablet(  )
 	{
 		alert(textkey + " not found");
 	}
+	frmOfflineData.txtRemoveItemKey.text ="";
 	//#endif
 }
 
@@ -318,19 +334,17 @@ function ClearItem( )
 			kony.store.clear();
 			alert("Local Storage is cleared");	
 			frmOfflineData.txtGetItemKey.text ="";
-			frmOfflineData.lblGetItemMessage.text ="";
+			frmOfflineData.txtGetItem.text ="";
 			frmOfflineData.txtRemoveItemKey.text="";
-			frmOfflineData.lblRemoveItemMessage.text="";
-			frmOfflineData.lblReadKeyMessage.text="";
 			frmOfflineData.txtReadKeyIndex.text ="";
 		//#else
 			kony.store.clear();
 			alert("Local Storage is cleared");
 			frmLocalStore.txtGetItemKey.text ="";
-			frmLocalStore.lblGetItemMessage.text ="";
+			/* frmLocalStore.lblGetItemMessage.text ="";*/
 			frmLocalStore.txtRemoveItemKey.text="";
-			frmLocalStore.lblRemoveItemMessage.text="";
-			frmLocalStore.lblReadKeyMessage.text="";
+            /*frmLocalStore.lblRemoveItemMessage.text="";*/
+			/*frmLocalStore.lblReadKeyMessage.text="";*/
 			frmLocalStore.txtReadKeyIndex.text ="";
 		//#endif	
 }
@@ -345,10 +359,9 @@ function ClearItem_Tablet( )
 			kony.store.clear();
 			alert("Local Storage is cleared");
 			frmOfflineData.txtGetItemKey.text ="";
-			frmOfflineData.lblGetItemMessage.text ="";
+			
 			frmOfflineData.txtRemoveItemKey.text="";
-			frmOfflineData.lblRemoveItemMessage.text="";
-			frmOfflineData.lblReadKeyMessage.text="";
+			
 			frmOfflineData.txtReadKeyIndex.text ="";
 }
 

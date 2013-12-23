@@ -549,7 +549,7 @@
         <tooltip></tooltip>
         <ipad_popupStyle>0</ipad_popupStyle>
         <ipadTitleBarData>
-            <background_image></background_image>
+            <background_image>blue_pixel.png</background_image>
             <buttonFocusSkinID>Skin Defaults</buttonFocusSkinID>
             <buttonSkinID>Skin Defaults</buttonSkinID>
             <buttonText></buttonText>

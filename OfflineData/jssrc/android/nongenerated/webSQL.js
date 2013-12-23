@@ -58,14 +58,13 @@ function createTable(dbId) {
         ["James", 20],
         ["James", 30]
     ];
-    for (i = 0;
-    ((insertTable) != null) && i < insertTable.length; i++) {
-        var v = insertTable[i]; //kony.decrement
-        var sqlStatement = "INSERT INTO emp_details VALUES (" + (count + 1000) + ",\"" + v[1] + "\"," + v[2] + ")"; // kony.decrement(2)  kony.decrement(1) 
+    for (i = 1;
+    ((insertTable) != null) && i <= insertTable.length; i++) {
+        var v = insertTable[i - 1]; // kony.decrement( i ) 
+        var sqlStatement = "INSERT INTO emp_details VALUES (" + (count + 1000) + ",\"" + v[0] + "\"," + v[1] + ")"; // kony.decrement(1)  kony.decrement(2) 
         count = count + 1;
         kony.db.executeSql(dbId, sqlStatement, null, success_createTable, commonErrorCallback);
     }
-    frmWebSQLResults.show();
 }
 /*****************************************************************
  *	Name    : createTable_Tablet
@@ -86,8 +85,8 @@ function createTable_Tablet(dbId) {
     ];
     for (i = 1;
     ((insertTable) != null) && i <= insertTable.length; i++) {
-        var v = insertTable[kony.decrement(i)];
-        var sqlStatement = "INSERT INTO emp_details VALUES (" + (count + 1000) + ",\"" + v[kony.decrement(1)] + "\"," + v[kony.decrement(2)] + ")";
+        var v = insertTable[i - 1];
+        var sqlStatement = "INSERT INTO emp_details VALUES (" + (count + 1000) + ",\"" + v[0] + "\"," + v[1] + ")";
         count = count + 1;
         kony.db.executeSql(dbId, sqlStatement, null, success_createTable_Tablet, commonErrorCallback);
     }
@@ -125,8 +124,8 @@ function insertFirstData(dbId) {
     ];
     for (i = 1;
     ((insertTable) != null) && i <= insertTable.length; i++) {
-        var v = insertTable[kony.decrement(i)];
-        var sqlStatement = "INSERT INTO emp_details VALUES (" + (count + 1000) + ",\"" + v[kony.decrement(1)] + "\"," + v[kony.decrement(2)] + ")";
+        var v = insertTable[i - 1];
+        var sqlStatement = "INSERT INTO emp_details VALUES (" + (count + 1000) + ",\"" + v[0] + "\"," + v[1] + ")";
         count = count + 1;
         kony.db.executeSql(dbId, sqlStatement, null, commonErrorCallback);
     }
@@ -144,8 +143,8 @@ function insertFirstData_Tablet(dbId) {
     ];
     for (i = 1;
     ((insertTable) != null) && i <= insertTable.length; i++) {
-        var v = insertTable[kony.decrement(i)];
-        var sqlStatement = "INSERT INTO emp_details VALUES (" + (count + 1000) + ",\"" + v[kony.decrement(1)] + "\"," + v[kony.decrement(2)] + ")";
+        var v = insertTable[i - 1];
+        var sqlStatement = "INSERT INTO emp_details VALUES (" + (count + 1000) + ",\"" + v[0] + "\"," + v[1] + ")";
         count = count + 1;
         kony.db.executeSql(dbId, sqlStatement, null, commonErrorCallback);
     }

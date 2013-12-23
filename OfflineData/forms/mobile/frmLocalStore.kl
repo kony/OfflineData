@@ -471,7 +471,7 @@
         <iphone_transDirection>0</iphone_transDirection>
         <iphone_transEffect>0</iphone_transEffect>
         <iphoneTitleBarData>
-            <background_image></background_image>
+            <background_image>blue_pixel.png</background_image>
             <buttonFocusSkinID>Skin Defaults</buttonFocusSkinID>
             <buttonSkinID>Skin Defaults</buttonSkinID>
             <buttonText></buttonText>

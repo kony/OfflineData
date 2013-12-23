@@ -787,6 +787,9 @@ function frmLocalStoreGlobals() {
         "outTransitionConfig": {
             "transitionDirection": "none",
             "transitionEffect": "none"
+        },
+        "deprecated": {
+            "titleBarBackGroundImage": "blue_pixel.png"
         }
     });
 };

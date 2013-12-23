@@ -50,6 +50,7 @@ function getItemvalues() {
     } else {
         alert("Key is not found");
     }
+    frmLocalStore.txtGetItemKey.text = "";
 }
 /*****************************************************************
  *	Name    : getItemvalues_Tab
@@ -68,6 +69,7 @@ function getItemvalues_Tab() {
     } else {
         alert("Key is not found");
     }
+    frmOfflineData.txtGetItemKey.text = "";
 }
 /*****************************************************************
  *	Name    : GetKey
@@ -88,6 +90,7 @@ function GetKey() {
     }
     if ((key != null)) alert(key);
     else alert("Key is not found for given Index.");
+    frmLocalStore.txtReadKeyIndex.text = "";
 }
 /*****************************************************************
  *	Name    : GetKey_Tablet
@@ -108,6 +111,7 @@ function GetKey_Tablet() {
     }
     if ((key != null)) alert(key);
     else alert("Key is not found for given Index.");
+    frmOfflineData.txtReadKeyIndex.text = "";
 }
 /*****************************************************************
  *	Name    : RemoveItem
@@ -126,6 +130,7 @@ function RemoveItem() {
     } else {
         alert(textkey + " not found");
     }
+    frmLocalStore.txtRemoveItemKey.text = "";
 }
 /*****************************************************************
  *	Name    : RemoveItem_Tablet
@@ -144,6 +149,7 @@ function RemoveItem_Tablet() {
     } else {
         alert(textkey + " not found");
     }
+    frmOfflineData.txtRemoveItemKey.text = "";
 }
 /*****************************************************************
  *	Name    : ClearItem
@@ -154,10 +160,10 @@ function ClearItem() {
     kony.store.clear();
     alert("Local Storage is cleared");
     frmLocalStore.txtGetItemKey.text = "";
-    frmLocalStore.lblGetItemMessage.text = "";
+    /* frmLocalStore.lblGetItemMessage.text ="";*/
     frmLocalStore.txtRemoveItemKey.text = "";
-    frmLocalStore.lblRemoveItemMessage.text = "";
-    frmLocalStore.lblReadKeyMessage.text = "";
+    /*frmLocalStore.lblRemoveItemMessage.text="";*/
+    /*frmLocalStore.lblReadKeyMessage.text="";*/
     frmLocalStore.txtReadKeyIndex.text = "";
 }
 /*****************************************************************
