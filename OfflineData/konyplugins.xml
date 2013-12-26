@@ -7,17 +7,17 @@
     <pluginInfo plugin-name="KonyHelp Plug-in" plugin-id="com.kony.help.Activator" version-no="5.5.13.QA_v201312061438"/>
     <pluginInfo plugin-name="Nativecodegen" plugin-id="com.kony.nativecodegen.NativeCodeGenPlugin" version-no="5.5.0.GA_v201311292048"/>
     <pluginInfo plugin-name="Kony Studio Licensing" version-no="5.5.0.beta2_v201309291420"/>
-    <pluginInfo plugin-name="CloudMiddlewarePlugin" plugin-id="com.kony.cloudmiddleware.Activator" version-no="5.5.19.QA_v201312031942_r3"/>
-    <pluginInfo plugin-name="CloudThirdPartyPlugin" plugin-id="com.kony.cloudthirdparty.Activator" version-no="5.5.19.QA_v201312031942_r3"/>
+    <pluginInfo plugin-name="CloudMiddlewarePlugin" plugin-id="com.kony.cloudmiddleware.Activator" version-no="5.5.20.QA_v201312241239"/>
+    <pluginInfo plugin-name="CloudThirdPartyPlugin" plugin-id="com.kony.cloudthirdparty.Activator" version-no="5.5.20.QA_v201312241239"/>
     <pluginInfo plugin-name="Visualizer Integration Plugin" plugin-id="com.viz.ide.VisualiserIDEPlugin" version-no="5.5.19.QA_v201312162007"/>
     <pluginInfo plugin-name="Tablet Android" plugin-id="com.pat.android.Activator" version-no="5.5.30.QA_v201312161551"/>
-    <pluginInfo plugin-name="Blackberry &amp; J2ME" plugin-id="com.pat.j2me.J2MEPlugin" version-no="5.5.18.QA_v201312091223"/>
-    <pluginInfo plugin-name="Blackberry 10" plugin-id="com.kony.bb10.BB10Plugin" version-no="5.5.10.QA"/>
+    <pluginInfo plugin-name="Blackberry &amp; J2ME" plugin-id="com.pat.j2me.J2MEPlugin" version-no="5.5.19.QA_v201312182047"/>
+    <pluginInfo plugin-name="Blackberry 10" plugin-id="com.kony.bb10.BB10Plugin" version-no="5.5.11.QA"/>
     <pluginInfo plugin-name="Winmobile Plug-in" plugin-id="com.pat.winmobile.WinMobilePlugin" version-no="5.5.9.QA_v201312121429"/>
     <pluginInfo plugin-name="Windows Phone 8 Plug-in" plugin-id="com.kony.windows.WindowsPhone8Plugin" version-no="5.5.10.QA_v201311261717"/>
     <pluginInfo plugin-name="Windows 8 Plug-in" plugin-id="com.kony.windows.Windows8Plugin" version-no="5.5.13.QA_v201312121301"/>
     <pluginInfo plugin-name="Android" plugin-id="com.pat.android.Activator" version-no="5.5.30.QA_v201312161313"/>
-    <pluginInfo plugin-name="ThinClient" plugin-id="thinclientplugin.Activator" version-no="5.5.14.QA_v201312101838"/>
+    <pluginInfo plugin-name="ThinClient" plugin-id="thinclientplugin.Activator" version-no="5.5.15.QA_v201312231818"/>
     <pluginInfo plugin-name="Windows Desktop Plug-in" plugin-id="com.kony.windows.WinDesktopPlugin" version-no="5.5.12.QA_v201312121503"/>
     <pluginInfo plugin-name="SPA" version-no="5.5.15.QA_v201312191226_r2"/>
     <pluginInfo plugin-name="Desktop Web" version-no="5.5.15.QA_v201311301338_r2"/>

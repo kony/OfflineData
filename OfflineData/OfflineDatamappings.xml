@@ -2,12 +2,12 @@
 <application name="OfflineData" id="OfflineData">
     <container type="dialog" id="hdrOne" displayname="Popup"/>
     <container type="dialog" id="ftrOne" displayname="Popup"/>
-    <container type="form" id="frmHome" displayname="Form"/>
     <container type="form" id="frmWebSQLResults" displayname="Form"/>
     <container type="dialog" id="hdrOne" displayname="Popup"/>
     <container type="dialog" id="ftrOne" displayname="Popup"/>
-    <container type="form" id="frmHome" displayname="Form"/>
     <container type="form" id="frmWebSQLResults" displayname="Form"/>
+    <container type="form" id="frmHome" displayname="Form"/>
+    <container type="form" id="frmHome" displayname="Form"/>
     <container type="dialog" id="hdrOne" displayname="Popup"/>
     <container type="dialog" id="ftrOne" displayname="Popup"/>
     <container type="form" id="frmHome" displayname="Form"/>

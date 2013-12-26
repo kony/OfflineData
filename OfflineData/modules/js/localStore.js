@@ -16,9 +16,9 @@ function setItemvalues( )
 	}
 	kony.store.setItem(key, value);
 	alert( "Item is saved in local storage.You will be able to read the key even if the application or the device is restarted. ");
-	frmOfflineData.txtSetItemkey.text ="";
-	frmOfflineData.txtSetItemValue.text="";
-	frmOfflineData.lblClearMessage.text = "";
+	//frmOfflineData.txtSetItemkey.text ="";
+	//frmOfflineData.txtSetItemValue.text="";
+	//frmOfflineData.lblClearMessage.text = "";
 	//#else
 	var key = frmLocalStore.txtSetItemkey.text;
 	var value = frmLocalStore.txtSetItemValue.text;
@@ -29,9 +29,9 @@ function setItemvalues( )
 	}
 	kony.store.setItem(key, value);
 	alert( "Item is saved in local storage.You will be able to read the key even if the application or the device is restarted. ");
-	frmLocalStore.txtSetItemkey.text ="";
-	frmLocalStore.txtSetItemValue.text="";
-	frmLocalStore.lblClearMessage.text = "";
+	//frmLocalStore.txtSetItemkey.text ="";
+	//frmLocalStore.txtSetItemValue.text="";
+	//frmLocalStore.lblClearMessage.text = "";
 	//#endif
 }
 
@@ -52,9 +52,9 @@ function setItemvalues_Tablet( )
 	}
 	kony.store.setItem(key, value);
 	alert( "Item is saved in local storage.You will be able to read the key even if the application or the device is restarted. ");
-	frmOfflineData.txtSetItemkey.text ="";
-	frmOfflineData.txtSetItemValue.text="";
-	frmOfflineData.lblClearMessage.text = "";
+	//frmOfflineData.txtSetItemkey.text ="";
+	//frmOfflineData.txtSetItemValue.text="";
+	//frmOfflineData.lblClearMessage.text = "";
 }
 /*****************************************************************
 *	Name    : getItemvalues
@@ -81,7 +81,7 @@ function getItemvalues(  )
 	{
 		alert("Key is not found");
 	}
-	frmOfflineData.txtGetItemKey.text ="";
+	//frmOfflineData.txtGetItemKey.text ="";
 	//#else
 		if (frmLocalStore.txtGetItemKey.text == "" || frmLocalStore.txtGetItemKey.text == null)
 	{
@@ -99,7 +99,7 @@ function getItemvalues(  )
 	{
 		alert("Key is not found");
 	}
-	frmLocalStore.txtGetItemKey.text ="";
+	//frmLocalStore.txtGetItemKey.text ="";
 	//#endif
    
 }
@@ -126,7 +126,7 @@ function getItemvalues_Tab(  )
 	{
 		alert("Key is not found");
 	}
-	frmOfflineData.txtGetItemKey.text ="";
+	//frmOfflineData.txtGetItemKey.text ="";
 }
 
 /*****************************************************************
@@ -160,7 +160,7 @@ function GetKey(  )
 		else
 			alert("Key is not found for given Index.");
 			
-		frmOfflineData.txtReadKeyIndex.text ="";
+		//frmOfflineData.txtReadKeyIndex.text ="";
 	//#else
 		if (frmLocalStore.txtReadKeyIndex.text == "" || frmLocalStore.txtReadKeyIndex.text == null)
 	{
@@ -184,7 +184,7 @@ function GetKey(  )
 		else
 			alert("Key is not found for given Index.");
 	
-	frmLocalStore.txtReadKeyIndex.text ="";
+	//frmLocalStore.txtReadKeyIndex.text ="";
 	//#endif
 }
 /*****************************************************************
@@ -217,7 +217,7 @@ function GetKey_Tablet(  )
 		else
 			alert("Key is not found for given Index.");
 			
-		frmOfflineData.txtReadKeyIndex.text ="";
+		//frmOfflineData.txtReadKeyIndex.text ="";
 }
 /*****************************************************************
 *	Name    : RemoveItem
@@ -247,7 +247,7 @@ function RemoveItem(  )
 		alert(textkey + " not found");
 	}
 	
-	frmOfflineData.txtRemoveItemKey.text ="";
+	//frmOfflineData.txtRemoveItemKey.text ="";
 	//#else
 		if (frmLocalStore.txtRemoveItemKey.text == "" || frmLocalStore.txtRemoveItemKey.text == null )
 	{
@@ -268,7 +268,7 @@ function RemoveItem(  )
 		alert(textkey + " not found");
 	}
 	
-	frmLocalStore.txtRemoveItemKey.text ="";
+	//frmLocalStore.txtRemoveItemKey.text ="";
 	//#endif	
 }
 /*****************************************************************
@@ -298,7 +298,7 @@ function RemoveItem_Tablet(  )
 	{
 		alert(textkey + " not found");
 	}
-	frmOfflineData.txtRemoveItemKey.text ="";
+	//frmOfflineData.txtRemoveItemKey.text ="";
 	//#else
 		if (frmOfflineData.txtRemoveItemKey.text == "" || frmOfflineData.txtRemoveItemKey.text == null )
 	{
@@ -318,7 +318,7 @@ function RemoveItem_Tablet(  )
 	{
 		alert(textkey + " not found");
 	}
-	frmOfflineData.txtRemoveItemKey.text ="";
+	//frmOfflineData.txtRemoveItemKey.text ="";
 	//#endif
 }
 
@@ -333,14 +333,17 @@ function ClearItem( )
 		//#ifdef desktopweb
 			kony.store.clear();
 			alert("Local Storage is cleared");	
+			frmOfflineData.txtSetItemkey.text ="";
+	        frmOfflineData.txtSetItemValue.text="";
 			frmOfflineData.txtGetItemKey.text ="";
-			frmOfflineData.txtGetItem.text ="";
 			frmOfflineData.txtRemoveItemKey.text="";
 			frmOfflineData.txtReadKeyIndex.text ="";
 		//#else
 			kony.store.clear();
 			alert("Local Storage is cleared");
 			frmLocalStore.txtGetItemKey.text ="";
+			frmLocalStore.txtSetItemkey.text ="";
+	        frmLocalStore.txtSetItemValue.text="";
 			/* frmLocalStore.lblGetItemMessage.text ="";*/
 			frmLocalStore.txtRemoveItemKey.text="";
             /*frmLocalStore.lblRemoveItemMessage.text="";*/
@@ -359,7 +362,8 @@ function ClearItem_Tablet( )
 			kony.store.clear();
 			alert("Local Storage is cleared");
 			frmOfflineData.txtGetItemKey.text ="";
-			
+			frmOfflineData.txtSetItemkey.text ="";
+	        frmOfflineData.txtSetItemValue.text="";
 			frmOfflineData.txtRemoveItemKey.text="";
 			
 			frmOfflineData.txtReadKeyIndex.text ="";
