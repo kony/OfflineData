@@ -207,7 +207,7 @@
     <attributes name="tcphoneformatindicator" value="false"/>
     <attributes name="Location" value="true"/>
     <attributes name="ACCESS_SURFACE_FLINGER" value="false"/>
-    <attributes name="currentgaversion" value="5.5.39.QA_v201312181548_r1"/>
+    <attributes name="currentgaversion" value="5.5.39.QA_v201312301746_r3"/>
     <attributes name="mwhttpsportkey" value="443"/>
     <attributes name="pathkey" value=""/>
     <attributes name="vendornamekey" value="KonyLabs"/>
