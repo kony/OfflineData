@@ -862,7 +862,7 @@
                 </bb10>
                 <bb10_override>false</bb10_override>
                 <bb_override>true</bb_override>
-                <default_override>true</default_override>
+                <default_override>false</default_override>
                 <defaults>
                     <left>8</left>
                     <right>8</right>
@@ -889,7 +889,7 @@
                 <ipad>
                     <left>25</left>
                     <right>25</right>
-                    <top>10</top>
+                    <top>6</top>
                     <bottom>5</bottom>
                     <unit>%</unit>
                 </ipad>
@@ -929,7 +929,7 @@
                 <spaipad>
                     <left>25</left>
                     <right>25</right>
-                    <top>10</top>
+                    <top>6</top>
                     <bottom>5</bottom>
                     <unit>%</unit>
                 </spaipad>
@@ -947,7 +947,7 @@
                 <tabRCAndroid>
                     <left>25</left>
                     <right>25</right>
-                    <top>10</top>
+                    <top>6</top>
                     <bottom>5</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
@@ -955,7 +955,7 @@
                 <tabspaAndroid>
                     <left>25</left>
                     <right>25</right>
-                    <top>10</top>
+                    <top>6</top>
                     <bottom>5</bottom>
                     <unit>%</unit>
                 </tabspaAndroid>
@@ -1590,7 +1590,7 @@
                 <ipad>
                     <left>8</left>
                     <right>8</right>
-                    <top>5</top>
+                    <top>3</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </ipad>
@@ -1630,7 +1630,7 @@
                 <spaipad>
                     <left>8</left>
                     <right>8</right>
-                    <top>5</top>
+                    <top>3</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </spaipad>
@@ -1648,7 +1648,7 @@
                 <tabRCAndroid>
                     <left>8</left>
                     <right>8</right>
-                    <top>5</top>
+                    <top>3</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
@@ -1656,7 +1656,7 @@
                 <tabspaAndroid>
                     <left>8</left>
                     <right>8</right>
-                    <top>5</top>
+                    <top>3</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </tabspaAndroid>

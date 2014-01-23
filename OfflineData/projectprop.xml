@@ -1,5 +1,5 @@
 <properties>
-    <attributes name="applogokey" value="0=icon.png"/>
+    <attributes name="applogokey" value="0=konyap.png,1=,8=konyap.png,2=,46=,42=,3=,16=,18=,43=,1000=konyap.png,1001=,1002=,21="/>
     <attributes name="androidmapkey2" value=""/>
     <attributes name="ACCESS_WIFI_STATE" value="false"/>
     <attributes name="mwaddrkey" value="10.10.1.48"/>
@@ -207,7 +207,7 @@
     <attributes name="tcphoneformatindicator" value="false"/>
     <attributes name="Location" value="true"/>
     <attributes name="ACCESS_SURFACE_FLINGER" value="false"/>
-    <attributes name="currentgaversion" value="5.5.39.QA_v201312301746_r3"/>
+    <attributes name="currentgaversion" value="5.5.1.GA_v201401031652"/>
     <attributes name="mwhttpsportkey" value="443"/>
     <attributes name="pathkey" value=""/>
     <attributes name="vendornamekey" value="KonyLabs"/>
